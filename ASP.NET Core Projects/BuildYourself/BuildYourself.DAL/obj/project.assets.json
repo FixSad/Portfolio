@@ -585,11 +585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\Pet-Projects\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\BuildYourself.DAL.csproj",
+      "projectUniqueName": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\BuildYourself.DAL.csproj",
       "projectName": "BuildYourself.DAL",
-      "projectPath": "D:\\projects\\Pet-Projects\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\BuildYourself.DAL.csproj",
+      "projectPath": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\BuildYourself.DAL.csproj",
       "packagesPath": "C:\\Users\\Goga\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\Pet-Projects\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\obj\\",
+      "outputPath": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -611,8 +611,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\projects\\Pet-Projects\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj": {
-              "projectPath": "D:\\projects\\Pet-Projects\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj"
+            "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj": {
+              "projectPath": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj"
             }
           }
         }

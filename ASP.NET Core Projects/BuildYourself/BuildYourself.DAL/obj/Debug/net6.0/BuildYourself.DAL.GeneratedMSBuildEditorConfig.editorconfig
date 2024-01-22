@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BuildYourself.DAL
-build_property.ProjectDir = D:\projects\Pet-Projects\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\
+build_property.ProjectDir = D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\

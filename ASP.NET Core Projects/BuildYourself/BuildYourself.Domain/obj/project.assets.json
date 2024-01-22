@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\Pet-Projects\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj",
+      "projectUniqueName": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj",
       "projectName": "BuildYourself.Domain",
-      "projectPath": "D:\\projects\\Pet-Projects\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj",
+      "projectPath": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj",
       "packagesPath": "C:\\Users\\Goga\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\Pet-Projects\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\obj\\",
+      "outputPath": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
