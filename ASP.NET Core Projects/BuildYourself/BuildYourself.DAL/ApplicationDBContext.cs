@@ -14,6 +14,5 @@ namespace BuildYourself.DAL
         public DbSet<GymTask> GymTasks { get; set; }
         public DbSet<GymCategory> GymCategories { get; set; }
         public DbSet<FileCategory> FileCategories { get; set; }
-
     }
 }

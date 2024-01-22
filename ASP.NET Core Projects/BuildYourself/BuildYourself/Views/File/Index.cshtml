@@ -7,29 +7,27 @@
         <div class="col-md-4 order-md-2 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <form class="needs-validation" id="categoryForm" novalidate>
+                    <form class="needs-validation" id="createFileCategoryForm" method="post" novalidate>
                         <h5 class="text-center">Create a Category</h5>
                         <div class="form-group mb-1">
                             <label for="categoryNameInput">Name:</label>
-                            <input type="text" class="form-control" id="categoryNameInput" required>
+                            <input name="categoryName" type="text" class="form-control" id="categoryNameInput" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="form-group mb-1">
                             <label for="categoryDescInput">Description:</label>
-                            <textarea class="form-control" id="categoryDescInput" required></textarea>
+                            <textarea name="categoryDescription" class="form-control" id="categoryDescInput" required></textarea>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
-                        <div class="checkbox mb-2">
-                            <label>
-                                <input type="checkbox"> Entertainment
-                            </label>
+                        <div class="mb-2">
+                            <input name="categoryIsEntertainment" type="checkbox" value="true" class="form-check-input" /> Entertainment
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button class="btn btn-primary" id="createFileCategory">Submit form</button>
                         </div>
                     </form>
                 </div>
@@ -37,18 +35,18 @@
             <hr />
             <div class="card">
                 <div class="card-body">
-                    <form class="needs-validation" id="itemForm" novalidate>
-                        <h5 class="text-center">Create an Item</h5>
+                    <form class="needs-validation" id="createFileForm" method="post" novalidate>
+                        <h5 class="text-center">Create a File</h5>
                         <div class="form-group mb-1">
                             <label for="itemNameInput">Name:</label>
-                            <input type="text" class="form-control" id="itemNameInput" required>
+                            <input name="fileName" type="text" class="form-control" id="itemNameInput" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="form-group mb-1">
                             <label for="itemDescInput">Description:</label>
-                            <textarea class="form-control" id="itemDescInput" required></textarea>
+                            <textarea name="fileDescription" class="form-control" id="itemDescInput" required></textarea>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
@@ -64,7 +62,7 @@
                             </select>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button class="btn btn-primary" id="createFile" type="submit">Submit form</button>
                         </div>
                     </form>
                 </div>
@@ -100,6 +98,24 @@
 
         $(function () {
             $('.selectpicker').selectpicker();
+        });
+
+        $('#createFileCategory').on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("CreateCategory", "File")',
+                data: $('#createFileCategoryForm').serialize()
+            })
+        });
+
+        $('#createFile').on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("CreateFile", "File")',
+                data: $('#createFileForm').serialize()
+            })
         });
     </script>
 }
