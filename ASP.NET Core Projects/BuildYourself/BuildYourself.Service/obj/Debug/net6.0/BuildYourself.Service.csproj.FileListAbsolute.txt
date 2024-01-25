@@ -1,0 +1,17 @@
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\BuildYourself.Service.csproj.AssemblyReference.cache
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\BuildYourself.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\BuildYourself.Service.AssemblyInfoInputs.cache
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\BuildYourself.Service.AssemblyInfo.cs
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\BuildYourself.Service.csproj.CoreCompileInputs.cache
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\bin\Debug\net6.0\BuildYourself.Service.deps.json
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\bin\Debug\net6.0\BuildYourself.Service.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\bin\Debug\net6.0\BuildYourself.Service.pdb
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\bin\Debug\net6.0\BuildYourself.DAL.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\bin\Debug\net6.0\BuildYourself.Domain.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\bin\Debug\net6.0\BuildYourself.DAL.pdb
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\bin\Debug\net6.0\BuildYourself.Domain.pdb
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\BuildYourself.Service.csproj.CopyComplete
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\BuildYourself.Service.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\refint\BuildYourself.Service.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\BuildYourself.Service.pdb
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.Service\obj\Debug\net6.0\ref\BuildYourself.Service.dll

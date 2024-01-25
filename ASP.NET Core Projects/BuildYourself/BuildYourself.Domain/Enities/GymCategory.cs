@@ -9,6 +9,6 @@ namespace BuildYourself.Domain.Enities
 {
     public class GymCategory : Category
     {
-        public List<MuscleGroups> MuscleGroups { get; set; }
+        public MuscleGroups MuscleGroups { get; set; }
     }
 }

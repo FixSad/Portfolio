@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BuildYourself.DAL\BuildYourself.DAL.csproj" />
+    <ProjectReference Include="..\BuildYourself.Service\BuildYourself.Service.csproj" />
   </ItemGroup>
 
 </Project>

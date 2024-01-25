@@ -1,9 +1,20 @@
 using BuildYourself.DAL;
+using BuildYourself.DAL.Interfaces;
+using BuildYourself.DAL.Repositories;
+using BuildYourself.Domain.Enities;
+using BuildYourself.Service.Implementations;
+using BuildYourself.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IBaseRepository<FileCategory>, FileCategoryRepository>();
+builder.Services.AddScoped<IFileCategoryService, FileCategoryService>();
+
+builder.Services.AddScoped<IBaseRepository<FileItem>, FileRepository>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 var connectionString = builder.Configuration.GetConnectionString("MSSQL");
 

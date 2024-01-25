@@ -9,6 +9,7 @@
       "BuildYourself/1.0.0": {
         "dependencies": {
           "BuildYourself.DAL": "1.0.0",
+          "BuildYourself.Service": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.15"
         },
@@ -568,6 +569,15 @@
         "runtime": {
           "BuildYourself.Domain.dll": {}
         }
+      },
+      "BuildYourself.Service/1.0.0": {
+        "dependencies": {
+          "BuildYourself.DAL": "1.0.0",
+          "BuildYourself.Domain": "1.0.0"
+        },
+        "runtime": {
+          "BuildYourself.Service.dll": {}
+        }
       }
     }
   },
@@ -961,6 +971,11 @@
       "sha512": ""
     },
     "BuildYourself.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildYourself.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -77,6 +77,7 @@
 
 @section Scripts
 {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         (function () {
             'use strict'
@@ -105,7 +106,21 @@
             $.ajax({
                 type: 'POST',
                 url: '@Url.Action("CreateCategory", "File")',
-                data: $('#createFileCategoryForm').serialize()
+                data: $('#createFileCategoryForm').serialize(),
+                success: function(response){
+                        Swal.fire({
+                            title: "Information",
+                            text: response.description,
+                            icon: "success"
+                        });
+                },
+                error: function(response){
+                        Swal.fire({
+                            title: "Information",
+                        text: response.responseJSON.description,
+                            icon: "error"
+                        });
+                }
             })
         });
 
@@ -114,7 +129,21 @@
             $.ajax({
                 type: 'POST',
                 url: '@Url.Action("CreateFile", "File")',
-                data: $('#createFileForm').serialize()
+                data: $('#createFileForm').serialize(),
+                success: function(response){
+                    Swal.fire({
+                        title: "Information",
+                        text: response.description,
+                        icon: "success"
+                    });
+                },
+                error: function(response){
+                    Swal.fire({
+                        title: "Information",
+                        text: response.responseJSON.description,
+                        icon: "error"
+                    });
+                }
             })
         });
     </script>
