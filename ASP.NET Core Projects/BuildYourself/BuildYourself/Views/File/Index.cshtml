@@ -1,6 +1,9 @@
-﻿@{
+﻿@using BuildYourself.Domain.Enities;
+@{
     ViewData["Title"] = "Home Page";
 }
+
+@model IEnumerable<BuildYourself.Domain.Enities.FileCategory>
 
 <div class="container">
     <div class="row">
@@ -53,12 +56,11 @@
                         </div>
                         <div class="checkbox mb-2">
                             <label for="selectCategory" class="form-label">Category:</label>
-                            <select id="selectCategory" class="form-select selectpicker" data-live-search="true" required>
-                                <option data-token="Some">Some</option>
-                                <option data-token="Test">Test</option>
-                                <option data-token ="Book">Book</option>
-                                <option data-token ="Film">Film</option>
-                                <option data-token ="Serial">Serial</option>
+                            <select name="fileCategory" id="selectCategory" class="form-select selectpicker" data-live-search="true" required>
+                                @foreach (var item in ViewBag.Categories)
+                                {
+                                    <option data-tokens="@item.Text">@item.Text</option>
+                                }
                             </select>
                         </div>
                         <div class="col-12">
@@ -70,7 +72,21 @@
             <br />
         </div>
         <div class="col-md-8 order-md-1">
-
+            <table class="table table-hover">
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>IsEntertainment</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Description</td>
+                        <td>@item.IsEntertainment</td>
+                    </tr>
+                }
+            </table>
         </div>
     </div>
 </div>
@@ -125,6 +141,7 @@
         });
 
         $('#createFile').on('click', function (e) {
+            debugger;
             e.preventDefault();
             $.ajax({
                 type: 'POST',

@@ -69,5 +69,20 @@ namespace BuildYourself.Service.Implementations
                 };
             }
         }
+
+        public async Task<IEnumerable<FileCategory>> GetAll()
+        {
+            try
+            {
+                var fileCategories = _fileCategoryRepository.GetAll();
+
+                return fileCategories;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"[FileCategoryService.GetAll]: {ex.Message}");
+                return null;
+            }
+        }
     }
 }

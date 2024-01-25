@@ -17,13 +17,16 @@ namespace BuildYourself.Service.Implementations
     public class FileService : IFileService
     {
         private IBaseRepository<FileItem> _fileRepository;
+        private IBaseRepository<FileCategory> _fileCategoryRepository;
         private ILogger<FileService> _logger;
 
         public FileService(IBaseRepository<FileItem> fileRepository,
-            ILogger<FileService> logger)
+            ILogger<FileService> logger,
+            IBaseRepository<FileCategory> fileCategoryRepository)
         {
             _fileRepository = fileRepository;
             _logger = logger;
+            _fileCategoryRepository = fileCategoryRepository;
         }
 
         public async Task<IBaseResponse<FileItem>> Create(FileViewModel model)
@@ -44,12 +47,16 @@ namespace BuildYourself.Service.Implementations
                     };
                 }
 
+                var category = await _fileCategoryRepository.GetAll()
+                    .Where(x=> x.Name == model.FileCategory)
+                    .FirstOrDefaultAsync();
+
                 FileItem fileItem = new FileItem()
                 {
                     Name = model.FileName,
                     Description = model.FileDescription,
                     StartDate = model.StartDate,
-                    Category = model.FileCategory
+                    Category = category
                 };
 
                 await _fileRepository.Create(fileItem);

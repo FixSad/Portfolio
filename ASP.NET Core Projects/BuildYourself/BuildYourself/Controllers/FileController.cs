@@ -1,8 +1,10 @@
 ﻿using BuildYourself.DAL;
+using BuildYourself.Domain.Enities;
 using BuildYourself.Domain.ViewModel;
 using BuildYourself.Models;
 using BuildYourself.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 
 namespace BuildYourself.Controllers
@@ -19,9 +21,13 @@ namespace BuildYourself.Controllers
             _fileService = fileService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var categories = await _fileCategoryService.GetAll();
+
+            ViewBag.Categories = new SelectList(categories, "Id", "Name");
+
+            return View(await _fileCategoryService.GetAll());
         }
 
         public IActionResult Privacy()

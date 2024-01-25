@@ -13,6 +13,6 @@ namespace BuildYourself.Domain.ViewModel
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string FileDescription { get; set; }
-        public FileCategory FileCategory { get; set; }
+        public string FileCategory { get; set; }
     }
 }
