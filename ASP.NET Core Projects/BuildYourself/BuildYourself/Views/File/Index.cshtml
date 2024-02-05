@@ -3,7 +3,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-@model IEnumerable<BuildYourself.Domain.Enities.FileCategory>
+@model IEnumerable<BuildYourself.Domain.Enities.FileItem>
 
 <div class="container">
     <div class="row">
@@ -57,9 +57,9 @@
                         <div class="checkbox mb-2">
                             <label for="selectCategory" class="form-label">Category:</label>
                             <select name="fileCategory" id="selectCategory" class="form-select selectpicker" data-live-search="true" required>
-                                @foreach (var item in ViewBag.Categories)
+                                @foreach (var category in ViewBag.Categories)
                                 {
-                                    <option data-tokens="@item.Text">@item.Text</option>
+                                    <option data-tokens="@category.Text">@category.Text</option>
                                 }
                             </select>
                         </div>
@@ -72,18 +72,40 @@
             <br />
         </div>
         <div class="col-md-8 order-md-1">
-            <table class="table table-hover">
+            <h5 class="text-center">All Files</h5>
+            <table class="table table-hover" id="tbl">
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
-                    <th>IsEntertainment</th>
+                    <th>Category</th>
+                    <th>Action</th>
                 </tr>
-                @foreach (var item in Model)
+                @foreach (var file in Model)
                 {
                     <tr>
-                        <td>@item.Name</td>
-                        <td>@item.Description</td>
-                        <td>@item.IsEntertainment</td>
+                        @using (Html.BeginForm("ChangeFileStatus", "File", FormMethod.Post))
+                        {
+                            <td>
+                                <input name="testName" type="hidden" value="@file.Name" />
+                                <p>@file.Name</p>
+                            </td>
+                            <td>@file.Description</td>
+                            <td>@file.Category.Name</td>
+                            <td>
+                                @if (file.Status == BuildYourself.Domain.Enums.FileStatus.Uncompleted)
+                                {
+                                    <input id="changeBtn" type="submit"  value="Start File" />
+                                }
+                                else if (file.Status == BuildYourself.Domain.Enums.FileStatus.InProcess)
+                                {
+                                    <input id="changeBtn" type="submit" value="End File" />
+                                }
+                                else
+                                {
+                                    <input id="changeBtn" type="submit" value="Reset" />
+                                }
+                            </td>
+                        }
                     </tr>
                 }
             </table>
@@ -94,6 +116,7 @@
 @section Scripts
 {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script>
         (function () {
             'use strict'
@@ -124,24 +147,32 @@
                 url: '@Url.Action("CreateCategory", "File")',
                 data: $('#createFileCategoryForm').serialize(),
                 success: function(response){
-                        Swal.fire({
-                            title: "Information",
-                            text: response.description,
-                            icon: "success"
-                        });
+                    select = document.getElementById('selectCategory');
+                    name = document.getElementById('categoryNameInput').value;
+                    var opt = document.createElement('option');
+
+                    opt.value = name;
+                    opt.text = name;
+                    opt.id = name;
+                    select.appendChild(opt);
+
+                    Swal.fire({
+                        title: "Information",
+                        text: response.description,
+                        icon: "success"
+                    });
                 },
                 error: function(response){
-                        Swal.fire({
-                            title: "Information",
+                    Swal.fire({
+                        title: "Information",
                         text: response.responseJSON.description,
-                            icon: "error"
-                        });
-                }
+                        icon: "error"
+                    });
+                }       
             })
         });
 
         $('#createFile').on('click', function (e) {
-            debugger;
             e.preventDefault();
             $.ajax({
                 type: 'POST',
@@ -153,6 +184,53 @@
                         text: response.description,
                         icon: "success"
                     });
+
+                    var table = document.getElementById("tbl");
+                    row = table.insertRow();
+
+                    var cell = row.insertCell();
+                    cell.innerHTML = document.getElementById('itemNameInput').value;
+
+                    cell = row.insertCell();
+                    cell.innerHTML = document.getElementById('itemDescInput').value;
+
+                    cell = row.insertCell();
+                    cell.innerHTML = document.getElementById('selectCategory').value;
+
+                    cell = row.insertCell();
+                    var newinp = document.createElement('input');
+                    newinp.value = "Start File";
+                    newinp.type = "button";
+                    newinp.onclick = function dofun() {
+                        var parameters = {
+                            TestName: document.getElementById('itemNameInput').value
+                        };
+                        $.ajax({
+                            type: 'POST',
+                            url: '@Url.Action("ChangeFileStatus", "File")',
+                            data: parameters,
+                            success: function (response) {
+                                if(newinp.value == "Start File"){
+                                    newinp.value = "End File";
+                                }
+                                else if (newinp.value == "End File") {
+                                    newinp.value = "Reset";
+                                }
+                                else {
+                                    newinp.value = "Start File";
+                                }
+                            },
+                            error: function (response) {
+                                Swal.fire({
+                                    title: "Error",
+                                    text: "Something went wrong. We can't change status",
+                                    icon: "error"
+                                });
+                            }
+                        });
+                    };
+                    cell.appendChild(newinp);
+                    
                 },
                 error: function(response){
                     Swal.fire({

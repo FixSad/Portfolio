@@ -166,3 +166,17 @@ D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYour
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\ref\BuildYourself.dll
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\BuildYourself.Service.dll
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\BuildYourself.Service.pdb
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\Enums.NET.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\MathNet.Numerics.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\NPOI.Core.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\NPOI.OOXML.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\NPOI.OpenXml4Net.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\NPOI.OpenXmlFormats.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\ICSharpCode.SharpZipLib.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\SixLabors.Fonts.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\System.Security.Cryptography.Xml.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

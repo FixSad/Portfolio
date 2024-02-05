@@ -1,4 +1,5 @@
 ﻿using BuildYourself.Domain.Enities;
+using BuildYourself.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace BuildYourself.Domain.ViewModel
         public DateTime EndDate { get; set; }
         public string FileDescription { get; set; }
         public string FileCategory { get; set; }
+        public FileStatus FileStatus { get; set; }
     }
 }

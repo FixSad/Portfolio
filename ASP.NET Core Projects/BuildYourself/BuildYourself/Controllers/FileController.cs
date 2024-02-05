@@ -27,7 +27,7 @@ namespace BuildYourself.Controllers
 
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
 
-            return View(await _fileCategoryService.GetAll());
+            return View(await _fileService.GetFiles());
         }
 
         public IActionResult Privacy()
@@ -47,11 +47,20 @@ namespace BuildYourself.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateFile(FileViewModel obj)
         {
-            obj.StartDate = DateTime.Now;
+            obj.FileStatus = Domain.Enums.FileStatus.Uncompleted;
             var response = await _fileService.Create(obj);
             if (response.StatusCode == Domain.Enums.StatusCode.Success)
                 return Ok(new { description = response.Description });
             return BadRequest(new { description = response.Description });
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangeFileStatus(string TestName)
+        {
+            await _fileService.ChangeFileStatus(TestName);
+            
+            return RedirectToAction("Index");
+        }
+
     }
 }

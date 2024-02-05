@@ -12,5 +12,9 @@ namespace BuildYourself.Service.Interfaces
     public interface IFileService
     {
         Task<IBaseResponse<FileItem>> Create(FileViewModel model);
+
+        Task<IEnumerable<FileItem>> GetFiles();
+
+        Task<bool> ChangeFileStatus(string? filter);
     }
 }

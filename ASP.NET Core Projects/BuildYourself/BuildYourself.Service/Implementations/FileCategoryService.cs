@@ -74,7 +74,9 @@ namespace BuildYourself.Service.Implementations
         {
             try
             {
+                _logger.LogInformation($"Request to get all FileCategories");
                 var fileCategories = _fileCategoryRepository.GetAll();
+                _logger.LogInformation($"Request to get all FileItems is successful");
 
                 return fileCategories;
             }
