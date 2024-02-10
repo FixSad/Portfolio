@@ -73,6 +73,14 @@
         </div>
         <div class="col-md-8 order-md-1">
             <h5 class="text-center">All Files</h5>
+            <br />
+            <div class="input-group rounded" style="max-width:350px">
+                <input type="search" class="form-control rounded" onkeyup="FilterTable()" placeholder="Search" id="myInput" />
+                <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+
             <table class="table table-hover" id="tbl">
                 <tr>
                     <th>Name</th>
@@ -109,14 +117,38 @@
                     </tr>
                 }
             </table>
+            <div class="row">
+                <div class="col-6">
+                    <ul class="list-group">
+                        @foreach (var file in Model)
+                        {
+                            @if(file.Status == BuildYourself.Domain.Enums.FileStatus.InProcess)
+                            {
+                                <ul class="list-group list-group-horizontal">
+                                    <li class="list-group-item">@file.Name</li>
+                                    <li class="list-group-item">
+                                        <input value="@file.Description" />
+                                    </li>
+                                    <li class="list-group-item"><i class="fa-solid fa-bolt"></i></li>
+                                </ul>
+                            }
+                        }
+                    </ul>
+                </div>
+                <div class="col-6">
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 @section Scripts
 {
+    <script src="https://kit.fontawesome.com/94804be35d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script>
         (function () {
             'use strict'
@@ -135,6 +167,28 @@
                     }, false)
                 })
         })()
+
+        function FilterTable() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tbl");
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 1; i < tr.length; i++) {
+                tr[i].style.display = "none";
+                td = tr[i].getElementsByTagName("td");
+                for (var j = 0; j < td.length; j++) {
+                    cell = tr[i].getElementsByTagName("td")[j];
+                    if (cell) {
+                        if (cell.innerText.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                            break;
+                        }
+                    }
+                }
+            }
+        }
 
         $(function () {
             $('.selectpicker').selectpicker();
