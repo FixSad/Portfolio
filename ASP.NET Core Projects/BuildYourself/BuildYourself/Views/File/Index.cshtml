@@ -14,23 +14,28 @@
                         <h5 class="text-center">Create a Category</h5>
                         <div class="form-group mb-1">
                             <label for="categoryNameInput">Name:</label>
-                            <input name="categoryName" type="text" class="form-control" id="categoryNameInput" required>
+                            <input name="categoryName" type="text" class="form-control" 
+                                   id="categoryNameInput" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="form-group mb-1">
                             <label for="categoryDescInput">Description:</label>
-                            <textarea name="categoryDescription" class="form-control" id="categoryDescInput" required></textarea>
+                            <textarea name="categoryDescription" class="form-control" 
+                                      id="categoryDescInput" required></textarea>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="mb-2">
-                            <input name="categoryIsEntertainment" type="checkbox" value="true" class="form-check-input" /> Entertainment
+                            <input name="categoryIsEntertainment" type="checkbox" value="true" 
+                                   class="form-check-input" /> Entertainment
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary" id="createFileCategory">Submit form</button>
+                            <button class="btn btn-primary" id="createFileCategory">
+                                Submit form
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -56,7 +61,8 @@
                         </div>
                         <div class="checkbox mb-2">
                             <label for="selectCategory" class="form-label">Category:</label>
-                            <select name="fileCategory" id="selectCategory" class="form-select selectpicker" data-live-search="true" required>
+                            <select name="fileCategory" id="selectCategory"
+                                    class="form-select selectpicker" data-live-search="true" required>
                                 @foreach (var category in ViewBag.Categories)
                                 {
                                     <option data-tokens="@category.Text">@category.Text</option>
@@ -64,7 +70,9 @@
                             </select>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary" id="createFile" type="submit">Submit form</button>
+                            <button class="btn btn-primary" id="createFile" type="submit">
+                                Submit form
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -75,12 +83,13 @@
             <h5 class="text-center">All Files</h5>
             <br />
             <div class="input-group rounded" style="max-width:350px">
-                <input type="search" class="form-control rounded" onkeyup="FilterTable()" placeholder="Search" id="myInput" />
+                <input type="search" class="form-control rounded"
+                       onkeyup="FilterTable()" placeholder="Search" id="myInput" />
                 <span class="input-group-text border-0" id="search-addon">
                     <i class="fas fa-search"></i>
                 </span>
             </div>
-
+            <br />
             <table class="table table-hover" id="tbl">
                 <tr>
                     <th>Name</th>
@@ -91,45 +100,51 @@
                 @foreach (var file in Model)
                 {
                     <tr>
-                        @using (Html.BeginForm("ChangeFileStatus", "File", FormMethod.Post))
-                        {
-                            <td>
-                                <input name="testName" type="hidden" value="@file.Name" />
-                                <p>@file.Name</p>
-                            </td>
-                            <td>@file.Description</td>
-                            <td>@file.Category.Name</td>
-                            <td>
-                                @if (file.Status == BuildYourself.Domain.Enums.FileStatus.Uncompleted)
-                                {
-                                    <input id="changeBtn" type="submit"  value="Start File" />
-                                }
-                                else if (file.Status == BuildYourself.Domain.Enums.FileStatus.InProcess)
-                                {
-                                    <input id="changeBtn" type="submit" value="End File" />
-                                }
-                                else
-                                {
-                                    <input id="changeBtn" type="submit" value="Reset" />
-                                }
-                            </td>
-                        }
+                        <td>
+                            <p>@file.Name</p>
+                        </td>
+                        <td>@file.Description</td>
+                        <td>@file.Category.Name</td>
+                        <td>
+                            @if (file.Status == BuildYourself.Domain.Enums.FileStatus.Uncompleted)
+                            {
+                                <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
+                                       class="btn btn-outline-info" value="Start File" />
+                            }
+                            else if (file.Status == BuildYourself.Domain.Enums.FileStatus.InProcess)
+                            {
+                                <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
+                                       class="btn btn-outline-info" value="End File" />
+                            }
+                            else
+                            {
+                                <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
+                                       class="btn btn-outline-info" value="Reset" />
+                            }
+                        </td>
                     </tr>
                 }
             </table>
             <div class="row">
                 <div class="col-6">
+                    <h5 class="text-center">Unfinished Files <i class="fa-solid fa-bolt"></i></h5>
                     <ul class="list-group">
                         @foreach (var file in Model)
                         {
                             @if(file.Status == BuildYourself.Domain.Enums.FileStatus.InProcess)
                             {
                                 <ul class="list-group list-group-horizontal">
-                                    <li class="list-group-item">@file.Name</li>
                                     <li class="list-group-item">
-                                        <input value="@file.Description" />
+                                        <input onclick="changeDescription('@file.Name')" style="width:60px"
+                                               class="btn btn-outline-info" value="Save" />
                                     </li>
-                                    <li class="list-group-item"><i class="fa-solid fa-bolt"></i></li>
+                                    <li class="list-group-item">
+                                        <span>@file.Name</span>
+                                    </li>
+                                    <li class="list-group-item" style="width:100%">
+                                        <input name="fileDescription" style="width:100%"
+                                               id="@file.Name Id" value="@file.Description" />
+                                    </li>
                                 </ul>
                             }
                         }
@@ -147,12 +162,10 @@
 {
     <script src="https://kit.fontawesome.com/94804be35d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script>
         (function () {
             'use strict'
-
             var forms = document.querySelectorAll('.needs-validation')
 
             Array.prototype.slice.call(forms)
@@ -194,6 +207,51 @@
             $('.selectpicker').selectpicker();
         });
 
+        function changeDescription(fileName) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("UpdateFileDescription", "File")',
+                data: {
+                    FileName: fileName, 
+                    FileDescription: document.getElementById(fileName + ' Id').value
+                },
+                success: function (response) {
+                    Swal.fire({
+                        title: "Information",
+                        icon: "success",
+                        title: response.description,
+                    }).then((result) => {
+                        location.reload() 
+                    });
+                },
+                error: function (response) {
+                    Swal.fire({
+                        title: "Information",
+                        text: response.responseJSON.description,
+                        icon: "error"
+                    });
+                }
+            })
+        }
+
+        function changeFileStatus(fileName){
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("ChangeFileStatus", "File")',
+                data: { FileName: fileName },
+                success: function (response) {
+                    location.reload()
+                },
+                error: function (response) {
+                    Swal.fire({
+                        title: "Information",
+                        text: response.responseJSON.description,
+                        icon: "error"
+                    });
+                }
+            })
+        }
+
         $('#createFileCategory').on('click', function (e) {
             e.preventDefault();
             $.ajax({
@@ -222,7 +280,7 @@
                         text: response.responseJSON.description,
                         icon: "error"
                     });
-                }       
+                }
             })
         });
 
@@ -284,7 +342,6 @@
                         });
                     };
                     cell.appendChild(newinp);
-                    
                 },
                 error: function(response){
                     Swal.fire({

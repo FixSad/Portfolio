@@ -13,8 +13,10 @@ namespace BuildYourself.Service.Interfaces
     {
         Task<IBaseResponse<FileItem>> Create(FileViewModel model);
 
-        Task<IEnumerable<FileItem>> GetFiles();
+        Task<IEnumerable<FileItem>> GetFiles(string Name="");
 
-        Task<bool> ChangeFileStatus(string? filter);
+        Task<IBaseResponse<bool>> ChangeFileStatus(string? filter);
+
+        Task<IBaseResponse<bool>> UpdateFile(FileItem model);
     }
 }

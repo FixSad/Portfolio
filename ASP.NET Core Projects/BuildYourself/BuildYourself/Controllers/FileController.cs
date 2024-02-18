@@ -49,18 +49,41 @@ namespace BuildYourself.Controllers
         {
             obj.FileStatus = Domain.Enums.FileStatus.Uncompleted;
             var response = await _fileService.Create(obj);
+
             if (response.StatusCode == Domain.Enums.StatusCode.Success)
                 return Ok(new { description = response.Description });
             return BadRequest(new { description = response.Description });
         }
 
         [HttpPost]
-        public async Task<IActionResult> ChangeFileStatus(string TestName)
+        public async Task<IActionResult> ChangeFileStatus(string FileName)
         {
-            await _fileService.ChangeFileStatus(TestName);
-            
-            return RedirectToAction("Index");
+            var response = await _fileService.ChangeFileStatus(FileName);
+
+            if (response.StatusCode == Domain.Enums.StatusCode.Success)
+                return Ok(new { description = response.Description });
+            return BadRequest(new { description = response.Description });
         }
 
+        [HttpPost]
+        public async Task<IActionResult> UpdateFileDescription(string FileName, string FileDescription)
+        {
+            var files = await _fileService.GetFiles(FileName);
+            var file = files.FirstOrDefault();
+
+            if(file != null)
+            {
+                if (file.Description == FileDescription)
+                    return BadRequest(new { description = "The description has not changed!" });
+
+                file.Description = FileDescription;
+                var response = await _fileService.UpdateFile(file);
+                
+                if (response.StatusCode == Domain.Enums.StatusCode.Success)
+                    return Ok(new {description = response.Description});
+                return BadRequest(new {description = response.Description});
+            }
+            return BadRequest();
+        }
     }
 }

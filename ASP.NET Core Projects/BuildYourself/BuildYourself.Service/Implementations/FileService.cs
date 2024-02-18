@@ -31,12 +31,36 @@ namespace BuildYourself.Service.Implementations
             _fileCategoryRepository = fileCategoryRepository;
         }
 
-        public async Task<bool> ChangeFileStatus(string? filter)
+        public async Task<IBaseResponse<bool>> UpdateFile(FileItem model)
         {
-            var isSuccess = false;
+            try
+            {
+                _logger.LogInformation($"Request to update the FileItem - {model.Name}");
+                await _fileRepository.Update(model);
+                _logger.LogInformation($"The FileItem was updated - {model.Name}");
+                return new BaseResponse<bool>
+                {
+                    StatusCode = StatusCode.Success,
+                    Description = $"The file's description has been saved"
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"[FileService.UpdateFile]: {ex.Message}");
+                return new BaseResponse<bool>
+                {
+                    StatusCode = StatusCode.InternalServerError,
+                    Description = ex.Message
+                };
+            }
+        }
+
+        public async Task<IBaseResponse<bool>> ChangeFileStatus(string? filter)
+        {
             try
             {
                 var file = await _fileRepository.GetAll().Where(x => x.Name == filter).FirstOrDefaultAsync();
+                _logger.LogInformation($"Request to change the FileItem status - {file.Name}");
                 if (file.Status == FileStatus.Uncompleted)
                     file.Status = FileStatus.InProcess;
                 else if (file.Status == FileStatus.InProcess)
@@ -45,20 +69,29 @@ namespace BuildYourself.Service.Implementations
                     file.Status = FileStatus.Uncompleted;
 
                 await _fileRepository.Update(file);
-                isSuccess = true;
+                _logger.LogInformation($"The file status was changed - {file.Name}");
+                return new BaseResponse<bool>
+                {
+                    Description = "The file status was changed",
+                    StatusCode = StatusCode.Success
+                };
             }
             catch (Exception ex)
             {
-                throw;
+                _logger.LogError(ex, $"[FileService.ChangeFileStatus]: {ex.Message}");
+                return new BaseResponse<bool>
+                {
+                    Description = ex.Message,
+                    StatusCode = StatusCode.InternalServerError
+                };
             }
-            return isSuccess;
         }
 
         public async Task<IBaseResponse<FileItem>> Create(FileViewModel model)
         {
             try
             {
-                _logger.LogInformation($"Request to create a FileItem - {model.FileName}");
+                _logger.LogInformation($"Request to create the FileItem - {model.FileName}");
                 var file = await _fileRepository.GetAll()
                     .Where(x => x.Name == model.FileName)
                     .FirstOrDefaultAsync();
@@ -105,16 +138,23 @@ namespace BuildYourself.Service.Implementations
             }
         }
 
-        public async Task<IEnumerable<FileItem>> GetFiles()
+        public async Task<IEnumerable<FileItem>> GetFiles(string Name = "")
         {
             try
             { 
                 _logger.LogInformation($"Request to get FileItems");
                 var files = _fileRepository.GetAll();
                 
-                _logger.LogInformation($"Request to get FileItems is successful");
+                if(string.IsNullOrEmpty(Name) || string.IsNullOrWhiteSpace(Name))
+                {
+                    _logger.LogInformation($"Request to get FileItems is successful");
 
-                return files;
+                    return files;
+                }
+
+                var file = files.Where(x => x.Name == Name);
+
+                return file;
             }
             catch (Exception ex)
             {
