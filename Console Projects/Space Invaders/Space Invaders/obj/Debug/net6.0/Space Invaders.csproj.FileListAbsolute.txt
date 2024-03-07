@@ -1,0 +1,30 @@
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\bin\Debug\net6.0\Space Invaders.exe
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\bin\Debug\net6.0\Space Invaders.deps.json
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\bin\Debug\net6.0\Space Invaders.runtimeconfig.json
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\bin\Debug\net6.0\Space Invaders.dll
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\bin\Debug\net6.0\Space Invaders.pdb
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\Space Invaders.csproj.AssemblyReference.cache
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\Space Invaders.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\Space Invaders.AssemblyInfoInputs.cache
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\Space Invaders.AssemblyInfo.cs
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\Space Invaders.csproj.CoreCompileInputs.cache
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\Space Invaders.dll
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\refint\Space Invaders.dll
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\Space Invaders.pdb
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\Space Invaders.genruntimeconfig.cache
+D:\projects\Pet-Projects\Console Projects\Space Invaders\Space Invaders\obj\Debug\net6.0\ref\Space Invaders.dll
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\bin\Debug\net6.0\Space Invaders.exe
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\bin\Debug\net6.0\Space Invaders.deps.json
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\bin\Debug\net6.0\Space Invaders.runtimeconfig.json
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\bin\Debug\net6.0\Space Invaders.dll
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\bin\Debug\net6.0\Space Invaders.pdb
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\Space Invaders.csproj.AssemblyReference.cache
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\Space Invaders.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\Space Invaders.AssemblyInfoInputs.cache
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\Space Invaders.AssemblyInfo.cs
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\Space Invaders.csproj.CoreCompileInputs.cache
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\Space Invaders.dll
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\refint\Space Invaders.dll
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\Space Invaders.pdb
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\Space Invaders.genruntimeconfig.cache
+D:\projects\Pet-Projects\Console Projects\Space Invaders test\Space Invaders\obj\Debug\net6.0\ref\Space Invaders.dll

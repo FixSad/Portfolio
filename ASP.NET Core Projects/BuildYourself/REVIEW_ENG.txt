@@ -1,0 +1,10 @@
+Status: the project is not ready 
+
+Description: The project is divided into 2 sections. 
+
+The first one is somewhat similar to a to-do list, 
+where you can create categories and store the things 
+you want to do in them.  It is possible to change the 
+statuses of cases in categories. 
+
+The second section helps you keep track of your progress in the gym

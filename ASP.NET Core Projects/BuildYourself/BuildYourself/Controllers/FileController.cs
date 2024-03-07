@@ -35,6 +35,11 @@ namespace BuildYourself.Controllers
             return View();
         }
 
+        public IActionResult FileInfo()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateCategory(FileCategoryViewModel obj)
         {
@@ -59,6 +64,16 @@ namespace BuildYourself.Controllers
         public async Task<IActionResult> ChangeFileStatus(string FileName)
         {
             var response = await _fileService.ChangeFileStatus(FileName);
+
+            if (response.StatusCode == Domain.Enums.StatusCode.Success)
+                return Ok(new { description = response.Description });
+            return BadRequest(new { description = response.Description });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> GenerateFile(string[] filters)
+        {
+            var response = await _fileService.GetRandomFile(filters);
 
             if (response.StatusCode == Domain.Enums.StatusCode.Success)
                 return Ok(new { description = response.Description });

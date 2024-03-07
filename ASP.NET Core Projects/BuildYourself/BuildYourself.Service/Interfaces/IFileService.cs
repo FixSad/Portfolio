@@ -15,8 +15,10 @@ namespace BuildYourself.Service.Interfaces
 
         Task<IEnumerable<FileItem>> GetFiles(string Name="");
 
-        Task<IBaseResponse<bool>> ChangeFileStatus(string? filter);
+        Task<IBaseResponse<bool>> ChangeFileStatus(string FileName);
 
         Task<IBaseResponse<bool>> UpdateFile(FileItem model);
+
+        Task<IBaseResponse<FileItem>> GetRandomFile(string[] filters);
     }
 }

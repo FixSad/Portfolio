@@ -1,18 +1,11 @@
 ﻿using BuildYourself.DAL.Interfaces;
 using BuildYourself.Domain.Enities;
+using BuildYourself.Domain.Enums;
 using BuildYourself.Domain.Response;
 using BuildYourself.Domain.ViewModel;
-using BuildYourself.Domain.Enums;
-using BuildYourself.Domain.Extensions;
 using BuildYourself.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Runtime.CompilerServices;
 
 namespace BuildYourself.Service.Implementations
 {
@@ -55,11 +48,12 @@ namespace BuildYourself.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<bool>> ChangeFileStatus(string? filter)
+        public async Task<IBaseResponse<bool>> ChangeFileStatus(string FileName)
         {
             try
             {
-                var file = await _fileRepository.GetAll().Where(x => x.Name == filter).FirstOrDefaultAsync();
+                var file = await _fileRepository.GetAll()
+                    .Where(x => x.Name == FileName).FirstOrDefaultAsync();
                 _logger.LogInformation($"Request to change the FileItem status - {file.Name}");
                 if (file.Status == FileStatus.Uncompleted)
                     file.Status = FileStatus.InProcess;
@@ -106,7 +100,7 @@ namespace BuildYourself.Service.Implementations
                 }
 
                 var category = await _fileCategoryRepository.GetAll()
-                    .Where(x=> x.Name == model.FileCategory)
+                    .Where(x => x.Name == model.FileCategory)
                     .FirstOrDefaultAsync();
 
                 FileItem fileItem = new FileItem()
@@ -141,11 +135,11 @@ namespace BuildYourself.Service.Implementations
         public async Task<IEnumerable<FileItem>> GetFiles(string Name = "")
         {
             try
-            { 
+            {
                 _logger.LogInformation($"Request to get FileItems");
                 var files = _fileRepository.GetAll();
-                
-                if(string.IsNullOrEmpty(Name) || string.IsNullOrWhiteSpace(Name))
+
+                if (string.IsNullOrEmpty(Name) || string.IsNullOrWhiteSpace(Name))
                 {
                     _logger.LogInformation($"Request to get FileItems is successful");
 
@@ -160,6 +154,94 @@ namespace BuildYourself.Service.Implementations
             {
                 _logger.LogError(ex, $"[FileService.GetFiles]: {ex.Message}");
                 return null;
+            }
+        }
+
+        public async Task<IBaseResponse<FileItem>> GetRandomFile(string[] filters)
+        {
+            try
+            {
+                Random random = new Random();
+                _logger.LogInformation($"Request to get random FileItem");
+
+                var files = await _fileRepository.GetAll()
+                    .Where(x => x.Status == FileStatus.Uncompleted)
+                    .Select(x => new FileViewModel()
+                    {
+                        FileName = x.Name,
+                        FileDescription = x.Description,
+                        FileCategory = x.Category.Name,
+                        FileStatus = x.Status
+                    }).ToListAsync();
+
+                if (filters.Contains("All Categories") || filters.Length == 0)
+                {
+                    if (files.Count() > 0)
+                    {
+                        _logger.LogInformation($"The file was received!");
+
+                        if (files.Count() == 1)
+                        {
+                            return new BaseResponse<FileItem>
+                            {
+                                Description = files[0].FileName,
+                                StatusCode = StatusCode.Success
+                            };
+                        }
+                        
+                        return new BaseResponse<FileItem>
+                        {
+                            Description = files[random.Next(0, files.Count())].FileName,
+                            StatusCode = StatusCode.Success
+                        };
+                    }
+                }
+                else if(filters.Length>0)
+                {
+                    List<FileViewModel> newFiles = new List<FileViewModel>();
+
+                    foreach (var category in filters)
+                    {
+                        var tempFiles = files.Where(x => x.FileCategory == category).ToList();
+                        newFiles.AddRange(tempFiles);
+                    }
+                    
+                    if(newFiles.Count() > 0)
+                    {
+                        _logger.LogInformation($"The file was received!");
+
+                        if (newFiles.Count() == 1)
+                        {
+                            return new BaseResponse<FileItem>
+                            {
+                                Description = newFiles[0].FileName,
+                                StatusCode = StatusCode.Success
+                            };
+                        }
+                        return new BaseResponse<FileItem>
+                        {
+                            Description = newFiles[random.Next(0, newFiles.Count())].FileName,
+                            StatusCode = StatusCode.Success
+                        };
+                    }
+                }
+
+                _logger.LogInformation($"No Files with FileStatus = Uncompleted.");
+
+                return new BaseResponse<FileItem>
+                {
+                    Description = "No Files!",
+                    StatusCode = StatusCode.NoIncompleteFiles
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"[FileService.GetRandomFile]: {ex.Message}");
+                return new BaseResponse<FileItem>
+                {
+                    Description = ex.Message,
+                    StatusCode = StatusCode.InternalServerError
+                };
             }
         }
     }

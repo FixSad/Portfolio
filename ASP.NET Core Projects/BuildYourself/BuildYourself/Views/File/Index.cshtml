@@ -80,8 +80,7 @@
             <br />
         </div>
         <div class="col-md-8 order-md-1">
-            <h5 class="text-center">All Files</h5>
-            <br />
+
             <div class="input-group rounded" style="max-width:350px">
                 <input type="search" class="form-control rounded"
                        onkeyup="FilterTable()" placeholder="Search" id="myInput" />
@@ -100,9 +99,7 @@
                 @foreach (var file in Model)
                 {
                     <tr>
-                        <td>
-                            <p>@file.Name</p>
-                        </td>
+                        <td><a class="nav-link text-dark" asp-controller="File" asp-action="FileInfo">@file.Name</a></td>
                         <td>@file.Description</td>
                         <td>@file.Category.Name</td>
                         <td>
@@ -151,7 +148,54 @@
                     </ul>
                 </div>
                 <div class="col-6">
-
+                    <h5 class="text-center">The Great Random <i class="fa-solid fa-shuffle"></i></h5>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="dropdown">
+                                        <button class="btn btn-success dropdown-toggle"
+                                                type="button"
+                                                id="multiSelectDropdown"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                            Select Categories
+                                        </button>
+                                        <ul class="dropdown-menu"
+                                            onchange="handleCB"
+                                            aria-labelledby="multiSelectDropdown">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox"
+                                                           value="All Categories">
+                                                    All Categories
+                                                </label>
+                                            </li>
+                                            @foreach (var category in ViewBag.Categories)
+                                            {
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox"
+                                                               value="@category.Text">
+                                                        @category.Text
+                                                    </label>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <br/>
+                                    <button class="btn btn-outline-info" id="generateFile">Generate!</button>
+                                </div>
+                                <div class="col-6">
+                                    <div class="container d-flex h-100">
+                                        <div class="row justify-content-center align-self-center" id="generatedFileDiv">
+                                            There will be your File!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,6 +208,38 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script>
+
+        const dropdownButton =
+            document.getElementById('multiSelectDropdown');
+        const dropdownMenu =
+            document.querySelector('.dropdown-menu');
+        let mySelectedItems = [];
+
+        function handleCB(event) {
+            const checkbox = event.target;
+            if (checkbox.checked) {
+                mySelectedItems.push(checkbox.value);
+            } else {
+                mySelectedItems =
+                    mySelectedItems.filter((item) => item !== checkbox.value);
+            }
+            console.log(mySelectedItems.length);
+            if (mySelectedItems.length == 0){
+                dropdownButton.innerText = 'Select Categories';
+            }
+            else if (mySelectedItems.includes('All Categories')) {
+                dropdownButton.innerText = 'All Categories';
+            }
+            else if (mySelectedItems.length == 1){
+                dropdownButton.innerText = '1 Category';
+            }
+            else{
+                dropdownButton.innerText = mySelectedItems.length + ' Categories';
+            }
+        }
+
+        dropdownMenu.addEventListener('change', handleCB);
+
         (function () {
             'use strict'
             var forms = document.querySelectorAll('.needs-validation')
@@ -175,7 +251,6 @@
                             event.preventDefault()
                             event.stopPropagation()
                         }
-
                         form.classList.add('was-validated')
                     }, false)
                 })
@@ -251,6 +326,37 @@
                 }
             })
         }
+
+        $('#generateFile').on('click', function (e) {
+            e.preventDefault();
+            var params = {
+                    filters: [
+                        ''
+                    ]
+                };
+            var i = 0;
+            for( str in mySelectedItems.values ){
+                params.filters[i] = str.value;
+                i++;
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GenerateFile", "File")',
+                data: { filters: mySelectedItems },
+                success: function(response){
+                    fileDiv = document.getElementById('generatedFileDiv');
+                    fileDiv.innerHTML = response.description;
+                },
+                error: function(response){
+                    Swal.fire({
+                        title: "Information",
+                        text: response.responseJSON.description,
+                        icon: "error"
+                    });
+                }
+            })
+        });
 
         $('#createFileCategory').on('click', function (e) {
             e.preventDefault();

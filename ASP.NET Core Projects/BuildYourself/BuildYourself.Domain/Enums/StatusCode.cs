@@ -10,6 +10,7 @@ namespace BuildYourself.Domain.Enums
     {
         CategoryIsHadAlready = 1,
         ItemIsHadAlready = 2,
+        NoIncompleteFiles = 3,
 
         Success = 200,
         InternalServerError = 500,
