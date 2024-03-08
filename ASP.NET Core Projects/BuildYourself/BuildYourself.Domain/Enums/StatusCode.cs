@@ -11,6 +11,7 @@ namespace BuildYourself.Domain.Enums
         CategoryIsHadAlready = 1,
         ItemIsHadAlready = 2,
         NoIncompleteFiles = 3,
+        FileWasNotFound = 4,
 
         Success = 200,
         InternalServerError = 500,

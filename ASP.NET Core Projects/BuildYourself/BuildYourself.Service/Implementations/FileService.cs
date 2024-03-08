@@ -132,6 +132,44 @@ namespace BuildYourself.Service.Implementations
             }
         }
 
+        public async Task<IBaseResponse<bool>> DeleteFile(string FileName)
+        {
+            try
+            {
+                _logger.LogInformation($"Request to delete FileItem - " + FileName);
+                var file = await _fileRepository.GetAll()
+                    .Where(x => x.Name.Equals(FileName))
+                    .FirstOrDefaultAsync();
+
+                if (file == null)
+                {
+                    return new BaseResponse<bool>
+                    {
+                        StatusCode = StatusCode.FileWasNotFound,
+                        Description = $"{FileName} was not found"
+                    };
+                }
+
+                await _fileRepository.Delete(file);
+                _logger.LogInformation($"The FileItem was deleted - {FileName}");
+
+                return new BaseResponse<bool>
+                {
+                    StatusCode = StatusCode.Success,
+                    Description = $"The file was deleted successfully!"
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"[FileService.DeleteFile]: {ex.Message}");
+                return new BaseResponse<bool>
+                {
+                    StatusCode = StatusCode.InternalServerError,
+                    Description = ex.Message
+                };
+            }
+        }
+
         public async Task<IEnumerable<FileItem>> GetFiles(string Name = "")
         {
             try

@@ -90,37 +90,48 @@
             </div>
             <br />
             <table class="table table-hover" id="tbl">
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Category</th>
-                    <th>Action</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                
                 @foreach (var file in Model)
                 {
-                    <tr>
-                        <td><a class="nav-link text-dark" asp-controller="File" asp-action="FileInfo">@file.Name</a></td>
+                    <tr id="@file.Name row">
+                        <td>@file.Name</td>
                         <td>@file.Description</td>
                         <td>@file.Category.Name</td>
                         <td>
                             @if (file.Status == BuildYourself.Domain.Enums.FileStatus.Uncompleted)
                             {
                                 <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
-                                       class="btn btn-outline-info" value="Start File" />
+                                       class="btn btn-outline-info" value="Start File" style="width:100px" />
                             }
                             else if (file.Status == BuildYourself.Domain.Enums.FileStatus.InProcess)
                             {
                                 <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
-                                       class="btn btn-outline-info" value="End File" />
+                                       class="btn btn-outline-info" value="End File" style="width:100px" />
                             }
                             else
                             {
                                 <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
-                                       class="btn btn-outline-info" value="Reset" />
+                                       class="btn btn-outline-info" value="Reset" style="width:100px" />
                             }
+                        </td>
+                        <td>
+                            <input id="deleteBtn" class="btn btn-outline-danger" value="Delete" 
+                                   style="width:100px" onclick="deleteFile('@file.Name')"/>
                         </td>
                     </tr>
                 }
+                </tbody>
             </table>
             <div class="row">
                 <div class="col-6">
@@ -327,6 +338,26 @@
             })
         }
 
+        function deleteFile(fileName){
+            $.ajax({
+                type: 'DELETE',
+                url: '@Url.Action("DeleteFile", "File")',
+                data: {FileName: fileName},
+                success: function (response){
+                    let rowId = fileName + ' row';
+                    var row = document.getElementById(rowId);
+                    row.parentNode.removeChild(row);
+                },
+                error: function (response){
+                    Swal.fire({
+                        title: "Information",
+                        text: response.responseJSON.description,
+                        icon: "error"
+                    });
+                }
+            })
+        }
+
         $('#generateFile').on('click', function (e) {
             e.preventDefault();
             var params = {
@@ -406,22 +437,29 @@
                     var table = document.getElementById("tbl");
                     row = table.insertRow();
 
-                    var cell = row.insertCell();
-                    cell.innerHTML = document.getElementById('itemNameInput').value;
+                    let nameCell = row.insertCell(0);
+                    let descriptionCell = row.insertCell(1);
+                    let categoryCell = row.insertCell(2);
+                    let actionCell = row.insertCell(3);
+                    let deleteCell = row.insertCell(4);
 
-                    cell = row.insertCell();
-                    cell.innerHTML = document.getElementById('itemDescInput').value;
+                    var nameText = document.createTextNode(document.getElementById('itemNameInput').value);
+                    nameCell.appendChild(nameText);
 
-                    cell = row.insertCell();
-                    cell.innerHTML = document.getElementById('selectCategory').value;
+                    var descriptionText = document.createTextNode(document.getElementById('itemDescInput').value);
+                    descriptionCell.appendChild(descriptionText);
 
-                    cell = row.insertCell();
-                    var newinp = document.createElement('input');
-                    newinp.value = "Start File";
-                    newinp.type = "button";
-                    newinp.onclick = function dofun() {
+                    var categoryText = document.createTextNode(document.getElementById('selectCategory').value);
+                    categoryCell.appendChild(categoryText);
+
+                    var actionInput = document.createElement('input');
+                    actionInput.value = "Start File";
+                    actionInput.type = "button";
+                    actionInput.style.width = "100px";
+                    actionInput.setAttribute('class', "btn btn-outline-info");
+                    actionInput.onclick = function dofun() {
                         var parameters = {
-                            TestName: document.getElementById('itemNameInput').value
+                            FileName: document.getElementById('itemNameInput').value
                         };
                         $.ajax({
                             type: 'POST',
@@ -447,7 +485,14 @@
                             }
                         });
                     };
-                    cell.appendChild(newinp);
+                    actionCell.appendChild(actionInput);
+
+                    var deleteInput = document.createElement('input');
+                    deleteInput.value = "Delete";
+                    deleteInput.type = "button";
+                    deleteInput.style.width = "100px";
+                    deleteInput.setAttribute('class', "btn btn-outline-danger");
+                    deleteCell.appendChild(deleteInput);
                 },
                 error: function(response){
                     Swal.fire({

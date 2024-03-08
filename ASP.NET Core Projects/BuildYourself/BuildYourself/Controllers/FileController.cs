@@ -70,6 +70,16 @@ namespace BuildYourself.Controllers
             return BadRequest(new { description = response.Description });
         }
 
+        [HttpDelete]
+        public async Task<IActionResult> DeleteFile(string FileName)
+        {
+            var response = await _fileService.DeleteFile(FileName);
+
+            if(response.StatusCode == Domain.Enums.StatusCode.Success)
+                return Ok(new { description = response.Description });
+            return BadRequest(new { description = response.Description });
+        }
+
         [HttpPost]
         public async Task<IActionResult> GenerateFile(string[] filters)
         {

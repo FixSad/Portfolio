@@ -19,6 +19,8 @@ namespace BuildYourself.Service.Interfaces
 
         Task<IBaseResponse<bool>> UpdateFile(FileItem model);
 
+        Task<IBaseResponse<bool>> DeleteFile(string FileName);
+
         Task<IBaseResponse<FileItem>> GetRandomFile(string[] filters);
     }
 }
