@@ -1,0 +1,34 @@
+!| MAIN MENU
+1234i|1. Iniciar el juego|2. Ajustes|3. Normas|4. Salida
+!|
+!|
+!| Settings
+351|1. Cambiar idioma|2. Atrás
+!|
+!|
+!| Languages
+5789¡|1. Русский|2. English|3. Español
+!|
+!|
+!|
+7|rus
+!|
+!|
+!|
+8|eng
+!|
+!|
+!|
+9|esp
+!|
+!|
+!|
+!|
+!|
+!|
+2*|Pulse cualquier botón para continuar!
+!|
+!|
+!|
+i^|
+41=|☻ - Protagonista|♂ - Enemigo|♥ - restaurando vidas|flecha arriba - Movimiento hacia arriba|flecha izquierda - moverse a la izquierda|Flecha correcta - muévete recto|flecha hacia abajo - movimiento descendente

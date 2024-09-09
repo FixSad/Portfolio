@@ -1,0 +1,7 @@
+D:\projects\RogueLikeTest\RogueLikeTest\bin\Debug\RogueLikeTest.exe.config
+D:\projects\RogueLikeTest\RogueLikeTest\bin\Debug\RogueLikeTest.exe
+D:\projects\RogueLikeTest\RogueLikeTest\bin\Debug\RogueLikeTest.pdb
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLikeTest.csproj.AssemblyReference.cache
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLikeTest.csproj.CoreCompileInputs.cache
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLikeTest.exe
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLikeTest.pdb

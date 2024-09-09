@@ -1,0 +1,79 @@
+!| HABITACIÓN 1
+1Q=|H444Q|Odio mi vida. Soy un ordinario (?) del planeta más ordinario - (?). |Trabajo como cartero intergaláctico. ¿Pero esto es trabajo?|El jefe piensa que estoy drenando combustible de una nave en funcionamiento. |Me envía a galaxias muy distantes y a planetas que definitivamente no son famosos por su comodidad y tranquilidad. |No tengo familia, ninguna mujer que quiera estar conmigo para continuar la carrera.|Estoy solo y estoy solo. ¿Por qué no me muero? Quiero morirme...
+!| HABITACIÓN #Q
+QW=|La sirena empezó a sonar.|**¡Posición de emergencia en el barco! Es necesario evacuar.**|**¡Posición de emergencia en el barco! Es necesario evacuar.**|**¡Posición de emergencia en el barco! Necesidad de evacuar.**
+!| HABITACIÓN #W
+WE=|¡¡¡OH NO!!! QUE PASA???|El sistema da error. |El motor se está acabando. ¿Voy a morir? Una fuerte sacudida. |Q44q se golpea la cabeza y pierde el conocimiento.
+!| SALA #E
+ER=|**El sistema ha detectado un planeta cercano. |Según los datos calculados, el piloto automático podrá realizar un aterrizaje de emergencia**|**El planeta en el sistema se llama "Tierra"**
+!| HABITACIÓN #R
+RT=|Después de algún tiempo(?):|Q44q recupera la conciencia y siente una fuerza de atracción inusual por él. Se alegra de estar vivo. Eres Q44q.
+!| HABITACIÓN #T
+TI=|¿Todo esta bien? Espero que no te sientas mal por tener que manejar a un imbécil.|Q44q no es lo que piensas. Tiene muchas habilidades.|Por ejemplo, puede salir fácilmente de una situación muy difícil sin aplicar una fuerza excesiva.|Pero, ¿puedes sobrevivir en este planeta con la apariencia de un bicho raro?
+!| Habitación #I
+!| HABITACIÓN #Y
+Y34|1. Trate de salir |2. No tan rapido...
+!| SALA #3
+35=|La escotilla, curiosamente, se abrió sin mucho esfuerzo.
+!| SALA #4
+4Y=|El panel de control está completamente desenergizado. |Parece que el módulo de servicio ha fallado. | Debemos inspeccionar la nave desde el exterior.
+!| SALA #5
+56=|Ves arena naranja brillante. | Sensor incorporado en el traje, muestra las condiciones óptimas para la existencia sin tanque de aire.
+!| SALA #6
+67=|Te quitas el casco y respiras hondo.
+!| SALA #7
+7U=|¿Qué hacer ahora?
+!| HABITACIÓN #U
+U89|1. Inspeccione el área. |2. Examina el barco.
+!| SALA #9
+9q=|-Este naufragio nunca ha sido famoso por su estabilidad durante los aterrizajes de emergencia. |Si empiezo a buscar una avería, puede prolongarse hasta la noche.|El sensor de estrellas muestra que el día en este planeta es 3,4 veces más corto que el nuestro. |Y no tengo nada de electricidad.-
+!| HABITACION#q
+qe8|1. Intento de reparar el barco |2. Inspeccione el área.
+!| HABITACIÓN #e
+eq=|Se necesita electricidad para determinar la causa de la avería. |Debes buscar una fuente de energía. Por ejemplo, una batería.
+!| SALA #8
+8Z=|Desierto, también es un desierto en otra galaxia. | Alrededor del silencio. Cerca notó una pequeña colina. |La mejor solución sería escalarlo e inspeccionar el territorio.|Te subiste y notaste una valla que se extendía hasta el horizonte. Detrás de él había edificios que parecían almacenes. |Quizás haya algo ahí que pueda ayudarte.
+!| SALA #I
+Zwr|1. Ve a la puerta. |2. Busca un agujero en la valla y entra por él.
+!| HABITACION#r
+rt=|Encontraste un pequeño hueco en la valla y te costó mucho trepar por él. |Pero de repente escuchaste un fuerte grito y un fuerte pisotón.
+!| HABITACIÓN #w
+wt=|No había nadie cerca de la puerta, rompiste la cerradura y entraste.
+!| HABITACIÓN #t
+tO=|Ves criaturas graciosas con cascos y chalecos antibalas corriendo hacia ti. | En sus manos hay elementos que parecen armas. ¿Qué hacer?
+!| HABITACIÓN #O
+Oyu|1. Corre para cubrirte. |2. Trate de lidiar con ellos.
+!| HABITACIÓN #y
+yi=|Rápidamente te pusiste a cubierto. Parece que los hiciste enojar. ¿Qué es este lugar de todos modos? |Está bien, deberías intentar salir de aquí con vida.|En algún lugar de tu traje espacial, parece que tienes las herramientas para protegerte. | Lo mismo para tales situaciones. ||Al presionar rápidamente los botones, encontraste la espada láser. |Es un extraño dispositivo a prueba de balas, pero no tienes otra opción.|Reuniste tus pensamientos y saliste corriendo a acabar con ellos. |Tus habilidades con la espada láser eran mucho mejores que sus habilidades de tiro. |Pero tuviste cuidado, todavía no eres un asesino.|Simplemente les cortaste los brazos y las piernas, con la esperanza de que tuvieran la misma regeneración rápida que las criaturas de tu planeta. Espero que no te equivoques...
+!| HABITACIÓN #u
+ui=|Empezaste a correr hacia ellos y tratar de vencerlos. |Comenzaron a dispararte... Es bueno que tu traje esté equipado con protección contra la mayoría de los tipos de daño. |Después de un minuto(?), todos estaban inconscientes.|Y pareces tener una gran fuerza en comparación con ellos.
+!| HABITACIÓN #i
+iP=|-¡¿Por qué querían matarme?! ¡¿Porque soy un extraterrestre?! | El cosmopolitismo ya está muy extendido en todas las galaxias. Aparentemente estoy en una especie de agujero.-|Tenemos que salir de aquí rápido. ¿Qué vas a hacer?
+!| HABITACIÓN #P
+Pop|1. Ve más allá y busca en las instalaciones. |2. Intenta volver al barco.
+!| HABITACIÓN #p
+pa=|Te das la vuelta y caminas de regreso, pero ya en la salida te encuentras con una criatura parada y fumando un cigarrillo. |Él termina de fumar un cigarrillo, lo tira al suelo y comienza a correr hacia ti.|Dando cuenta de que no tiene un arma, huyes de él de regreso al territorio y corres hacia el edificio más cercano.
+!| HABITACIÓN #o
+oa=|Todos los edificios son como enormes instalaciones de almacenamiento. Fuiste al siguiente.
+!| HABITACIÓN #a
+aD=|Está oscuro aquí. Pero no eres una de las criaturas más temibles a las que prestar atención. |En el interior siluetas visibles de estanterías y cajas sobre ellas.| |-Aparentemente, tenía razón, esto es realmente un almacén. Pero entonces, ¿qué hacen aquí las criaturas con ametralladoras? -
+!| SALA #D
+DF=|Empezaste a buscar en las cajas. Contenían varias piezas de metal. -¡¿Para qué son?!-|Empezaste a leer el texto de las cajas y encontraste el destinatario en letra pequeña. |Estaba escrito: "Área 51". -¿Qué puede significar eso?-
+!| SALA #F
+FG=|Buscas en muchas cajas y en una de ellas encuentras algo parecido a tu batería habitual. |Quizás esto te ayude. Tomas la batería en tus manos y comienzas a caminar hacia la salida.|Pero tan pronto como te acercaste a la puerta, las luces rojas se encendieron y la sirena comenzó a sonar. -Al parecer, es por mi culpa...-
+!| HABITACION#G
+Gs=|Las mismas criaturas que la última vez entraron en la habitación. Pero te ocupaste rápidamente de ellos. Cogiste una ametralladora de uno de ellos y te dirigiste a la salida. Escuchaste a alguien venir del otro lado de la puerta.
+!| Habitaciones
+sdf|1. Intenta salir. |2. Sal por otra puerta.
+dg=|Intentas abrir la puerta, pero está bloqueada. Oyes un grito. Parece que tendré que salir por otra salida. |En la esquina de la habitación notas una puerta.
+!| HABITACION#f
+fg=|La luz roja parpadeante te hace ver la puerta.
+!| HABITACION#g
+gh=|Abres la maldita puerta, corres rápidamente hacia el pasillo.|Pintura al óleo: un alienígena enorme con un arma y una batería, piel como un gusano, |ojos negros y un traje-armadura se encuentra cerca de la entrada. |En el centro de la habitación en la que entraste, hay unas 20 criaturas con chalecos antibalas y ametralladoras. | Todos te miran con mucha atención. ¿Por qué están de pie? Aparentemente, te están esperando...||Uno de ellos da un paso hacia ti. Probablemente sea el líder. |Esta criatura con un sombrero divertido te dice algo, pero no lo entiendes. |Y luego te escupe en la cara. ¿Puedes soportarlo?
+!| HABITACION#h
+hjk|1. Intenta dispararles a todos. |2. Resolver todo amigablemente).
+!| HABITACION#k
+k0=|Empiezan a dispararte y te golpean en la cabeza. ¿Final? Sí, moriste...
+!| habitación j
+j?|
+0?$|

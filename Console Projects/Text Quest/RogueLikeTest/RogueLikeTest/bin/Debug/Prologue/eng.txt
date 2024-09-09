@@ -1,0 +1,80 @@
+!| ROOM #1
+1Q=|H444Q|I hate my life. I am an ordinary (?) from the most ordinary planet - (?).|I work as an intergalactic postman. But is this a job?|The boss thinks I'm draining fuel from a work ship.|Sends me to very distant galaxies and to planets that are not exactly famous for comfort and tranquility.|I have no family, no female who would want to continue the race with me.|I am alone and I am lonely. Why don't I just die? I want to die...
+!| ROOM #Q
+QW=|A siren sounded.|**Emergency situation on the ship! It is necessary to evacuate.**|**Emergency situation on the ship! It is necessary to evacuate.**|**Emergency situation on the ship! It is necessary to evacuate.**
+!| ROOM #W
+WE=|OH, NO!!! what's happening???|The system throws an error. The engine is running out. Am I going to die?|A sharp push. Q44q hits his head and loses consciousness.
+!| ROOM #E
+ER=|**The system has detected a planet nearby. |According to the calculated data, the autopilot will be able to make an emergency landing**|**The planet in the system has the name "Earth"**
+!| ROOM #R
+RT=|After some time (?):|Q44q regains consciousness and feels an unusual force of attraction for him. He's glad he's alive.|You are Q44q.
+!| ROOM #T
+TI=|Everything okay? I hope you're not upset about having to manage some jerk.|Q44q is not what you think. He has a lot of skills.|For example, he can easily get out of a very difficult situation without exerting excessive force.|But can you survive on this planet, having the appearance of a freak?
+!| Room #I
+IY=|It looks like the ship is on the surface of some planet.
+!| ROOM #Y
+Y34|1. Try to get outside |2. Not so fast...
+!| ROOM #3
+35=|The hatch, oddly enough, opened without much effort.
+!| ROOM #4
+4Y=|Control panel is completely de-energized. |It appears that the service module has failed. | We must inspect the ship from the outside.
+!| ROOM #5
+56=|You see bright orange sand. | Sensor built into the suit, shows the optimal conditions for existence without an air tank.
+!| ROOM #6
+67=|You take off your helmet and take a deep breath.
+!| ROOM #7
+7U=|What to do now?
+!| ROOM #U
+U89|1. Inspect the area. |2. Examine the ship.
+!| ROOM #9
+9q=|-This wreck has never been famous for its stability during crash landings. |If I start looking for a breakdown, it may drag on until nighttime.|The star sensor shows that the day on this planet is 3.4 times shorter than ours. |And I have no electricity at all.-
+!| ROOM#q
+qe8|1. Attempt to repair the ship |2. Inspect the area.
+!| ROOM#e
+eq=|Electricity is needed to determine the cause of the breakdown. |You should look for a source of energy. For example, a battery.
+!| ROOM #8
+8Z=|Desert, it is also a desert in another galaxy. | Around the silence. Nearby you noticed a small hill. |The best solution would be to climb it and inspect the territory.|You climbed on it and noticed a fence stretching to the horizon. Behind him were buildings that looked like warehouses. |Perhaps there is something there that can help you.
+!| ROOM #I
+Zwr|1. Go to the gate. |2. Look for a hole in the fence and enter through it.
+!| ROOM#r
+rt=|You found a small gap in the fence and had a hard time climbing through it. | But suddenly you heard a loud scream and stomp.
+!| ROOM #w
+wt=|There was no one near the gate, you broke the lock and went inside.
+!| ROOM #t
+tO=|You see funny creatures in helmets and body armor running towards you. | In their hands are items that look like weapons. What to do?
+!| ROOM #O
+Oyu|1. Run for cover. |2. Try to deal with them.
+!| ROOM #y
+yi=|You quickly ran behind cover. It looks like you made them angry. What is this place anyway? |Okay, you should try to make it out of here alive.|Somewhere in your spacesuit, you seem to have the tools to protect yourself. | Just the same for such situations. ||By quickly pressing the buttons, you found the laser sword. |It's a strange bulletproof device, but you just don't have a choice.|You gathered your thoughts and ran out to finish them off. |Your laser sword skills were much better than their shooting skills. |But you were careful, you're still not a killer.|You just cut off their arms and legs, hoping that they have the same fast regeneration as the creatures of your planet. I hope you're not mistaken...
+!| ROOM #u
+ui=|You started running at them and trying to beat them. |They started shooting at you... It's good that your suit is equipped with protection against most types of damage. |After a minute(?), everyone was unconscious.|And you seem to have great strength compared to them.
+!| ROOM #i
+iP=|-Why did they want to kill me?! Because I'm an alien?! | Cosmopolitanism is already widespread in all galaxies. Apparently I'm in some kind of hole.-|We need to get out of here quickly. What are you to do?
+!| ROOM #P
+Pop|1. Go further and search the premises. |2. Try to get back to the ship.
+!| ROOM #p
+pa=|You turn around and walk back, but already at the exit you are met by a creature standing still and smoking a cigarette. |He finishes smoking a cigarette, throws it on the floor and starts running at you.|Noticing that he has no weapon, you run away from him back to the territory and run into the nearest building.
+!| ROOM #o
+oa=|All buildings are like huge storage facilities. You went to the next one.
+!| ROOM #a
+aD=|It's dark in here. But you're not one of the most fearful creatures to pay attention to. | Inside visible silhouettes of shelves and boxes on them. | |-Apparently, I was right, this is really a warehouse. But then what are the creatures with machine guns doing here? -
+!| ROOM #D
+DF=|You started searching the boxes. They contained various metal parts. -What are they for?!-|You began to read the text on the boxes and found the addressee in small print. |It was written: "Area 51". - What could that mean? -
+!| ROOM #F
+FG=|You search a lot of boxes and in one of them you find something resembling your usual battery. |Perhaps this will help you. You take the battery in your hands and start walking towards the exit.|But as soon as you approached the door, the red lights turned on and the siren began to play. -Apparently, it's because of me...-
+!| ROOM#G
+Gs=|The same creatures as last time ran into the room. But you quickly dealt with them.|You took a machine gun from one of them and went to the exit. You heard someone coming from the other side of the door.
+!| ROOM#s
+sdf|1. Try to get out. |2. Exit through another door.
+dg=|You try to open the door, but it's locked. You hear a scream. Looks like I'll have to exit through another exit. |In the corner of the room you notice a door.
+!| ROOM#f
+fg=|Blinking red light makes you spot the door.
+!| ROOM#g
+gh=|You open the damn door, quickly run into the passage.|Oil painting: a huge alien with a weapon and a battery, skin like a worm, |black eyes and a suit-armor stands near the entrance. |In the center of the room you entered, there are about 20 creatures in body armor and machine guns. | They all look at you very carefully. Why are they standing? Apparently, they are waiting for you...||One of them makes a step towards you. He's probably the leader. |This creature in a funny hat says something to you, but you don't understand. |And then he spits in your face. Can you bear it?
+!| ROOM#h
+hjk|1. Try to shoot everyone. |2. Resolve everything amicably).
+!| ROOM#k
+k0=|They start shooting at you and hit you in the head. End? Yes, you died...
+!| Room j
+j?|
+0?$|

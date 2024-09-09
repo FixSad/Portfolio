@@ -1,0 +1,22 @@
+!| HABITACIÓN 1
+1A=|Disparas a todos, no perdonas a nadie. Lo hiciste rápido (?). | Pero de repente, sentiste que te disparaban, te volviste, era el mismo líder que te escupió.
+!| SALA #A
+Alx|1. Suelta los cartuchos restantes en la cabeza de este bicho raro. |2. Dispara en la mano y recoge el arma.
+!| HABITACIÓN #l
+lx=|Sin perdonar a esta miserable criatura, le sacas el relleno de la cabeza y le quitas el arma.
+!| HABITACIÓN #z
+xc=|No tienes ningún deseo de volver atrás, así que pasas por la puerta de al lado. |-Por alguna razón, aquí hay muchas puertas...-
+!| HABITACIÓN #c
+cz=|Sales a un largo pasillo, también tiene puertas. Ya sientes que te estás volviendo loco. |Con dificultad encuentras una salida. Y feliz de haber sobrevivido, regresas corriendo a tu barco.
+!| HABITACIÓN #z
+zS=|Corriste hacia el barco sin encontrarte con nadie en el camino. ¿Está la suerte de tu lado? |Conectó la batería a la fuente de alimentación. Pero, ¿qué sigue?
+!| HABITACIONES
+Svb|1. Intenta salir de esta maldita Área 51 ahora. |2. Sobrevive la noche en el barco y luego, habiendo ganado fuerza, vuela a casa.
+!| HABITACIÓN #v
+v0=|Reparaste el daño y pudiste despegar. Has superado este difícil desafío. | ¡Bien hecho! |Pero ¿qué sigue? || La vida de un cartero intergaláctico ordinario.
+!| HABITACIÓN #b
+bM=|La silueta de una chica aparece frente a ti. Su cuerpo tiene formas indescriptibles. |Esto no lo has visto, ni siquiera en un planeta habitado solo por mujeres. |Ella extiende su mano hacia tu cara viscosa.|Sientes el placer de su toque. Estas enamorado...
+!| HABITACIÓN #M
+M0=|Clic fuerte, estás despierto. Todo a tu alrededor es blanco brillante. ||Detrás del cristal hay seres vestidos de blanco. tu eres la prueba...
+!| Habitación 0
+0?|

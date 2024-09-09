@@ -1,0 +1,22 @@
+!| ROOM #1
+1A=|You shoot at everyone, spare no one. You did it quickly(?). | But suddenly, you felt like they were shooting at you, you turned around, it was the same leader who spat at you.
+!| ROOM #A
+Alx|1. Release the remaining cartridges in the head of this freak. |2. Shoot in the hand and pick up the weapon.
+!| ROOM #l
+lx=|Without sparing this miserable creature, you make stuffing out of his head and take away the gun.
+!| ROOM #z
+xc=|You have no desire to go back at all, so you go through the next door. |-For some reason, there are a lot of doors here...-
+!| ROOM #c
+cz=|You go out into a long corridor, it also has doors. You already feel like you're going crazy. |With difficulty you find a way out. And joyful that you survived, you run back to your ship.
+!| ROOM #z
+zS=|You ran to the ship without meeting anyone on the way. Is luck on your side? |You connected the battery to the power supply. But what's next?
+!| ROOM#S
+Svb|1. Try to get out of this damn Area 51 now. |2. Survive the night on the ship, and then, having gained strength, fly home.
+!| ROOM #v
+v0=|You repaired the damage and were able to take off. You have overcome this difficult challenge. | Well done! |But what's next? || The life of an ordinary intergalactic postman.
+!| ROOM #b
+bM=|A silhouette of a girl appears in front of you. Her body has indescribable forms. |This you have not seen, even on a planet inhabited only by females. |She reaches out her hand to your slimy face.|You feel the pleasure of her touch. Are you in love...
+!| ROOM #M
+M0=|Hard click, you're awake. Everything around you is bright white. ||Behind the glass are beings in white clothes. You are the test...
+!| Room 0
+0?|

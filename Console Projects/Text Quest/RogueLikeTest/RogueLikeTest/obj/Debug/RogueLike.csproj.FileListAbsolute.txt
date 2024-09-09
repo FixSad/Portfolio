@@ -1,0 +1,8 @@
+D:\projects\RogueLikeTest\RogueLikeTest\bin\Debug\RogueLikeTest.exe.config
+D:\projects\RogueLikeTest\RogueLikeTest\bin\Debug\RogueLikeTest.exe
+D:\projects\RogueLikeTest\RogueLikeTest\bin\Debug\RogueLikeTest.pdb
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLike.csproj.AssemblyReference.cache
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLike.csproj.SuggestedBindingRedirects.cache
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLike.csproj.CoreCompileInputs.cache
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLikeTest.exe
+D:\projects\RogueLikeTest\RogueLikeTest\obj\Debug\RogueLikeTest.pdb

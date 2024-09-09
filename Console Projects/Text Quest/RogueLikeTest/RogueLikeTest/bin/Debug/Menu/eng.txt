@@ -1,0 +1,31 @@
+!| MAIN MENU
+1234i|1. Start the game|2. Settings|3. Rules|4. Exit
+!|
+!|
+!| Settings
+351|1. Change language|2. Back
+!|
+!|
+!| Languages
+5789¡|1. Русский|2. English|3. Español
+!|
+!|
+!|
+7|rus
+!|
+!|
+!|
+8|eng
+!|
+!|
+!|
+9|esp
+!|
+!|
+!|
+2*|Press any button to continue!
+!|
+!|
+!|
+i^|
+41=|☻ - main hero|♂ - enemy|♥ - healing|Up arrow - upward movement|left arrow - move to the left|right arrow - move to the right|down arrow - downward movement
