@@ -1,0 +1,7 @@
+﻿#vertical-scrollbar {
+    min-width: 20em;
+    max-height: 620px;
+    margin-bottom: 10px;
+    background-color: white;
+    overflow-y: auto;
+}

@@ -33,7 +33,7 @@
                                    class="form-check-input" /> Entertainment
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary" id="createFileCategory">
+                            <button class="btn btn-primary" id="createFileCategory" onclick="createCategory()">
                                 Submit form
                             </button>
                         </div>
@@ -80,7 +80,6 @@
             <br />
         </div>
         <div class="col-md-8 order-md-1">
-
             <div class="input-group rounded" style="max-width:350px">
                 <input type="search" class="form-control rounded"
                        onkeyup="FilterTable()" placeholder="Search" id="myInput" />
@@ -89,50 +88,53 @@
                 </span>
             </div>
             <br />
-            <table class="table table-hover" id="tbl">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Category</th>
-                        <th>Action</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <div class="container" id="vertical-scrollbar">
+                <table class="table table-hover" id="tbl">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Action</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-                
-                @foreach (var file in Model)
-                {
-                    <tr id="@file.Name row">
-                        <td>@file.Name</td>
-                        <td>@file.Description</td>
-                        <td>@file.Category.Name</td>
-                        <td>
-                            @if (file.Status == BuildYourself.Domain.Enums.FileStatus.Uncompleted)
-                            {
-                                <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
-                                       class="btn btn-outline-info" value="Start File" style="width:100px" />
-                            }
-                            else if (file.Status == BuildYourself.Domain.Enums.FileStatus.InProcess)
-                            {
-                                <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
-                                       class="btn btn-outline-info" value="End File" style="width:100px" />
-                            }
-                            else
-                            {
-                                <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
-                                       class="btn btn-outline-info" value="Reset" style="width:100px" />
-                            }
-                        </td>
-                        <td>
-                            <input id="deleteBtn" class="btn btn-outline-danger" value="Delete" 
-                                   style="width:100px" onclick="deleteFile('@file.Name')"/>
-                        </td>
-                    </tr>
-                }
-                </tbody>
-            </table>
+
+                        @foreach (var file in Model)
+                        {
+                            <tr id="@file.Name row">
+                                <td>@file.Name</td>
+                                <td>@file.Description</td>
+                                <td>@file.Category.Name</td>
+                                <td>
+                                    @if (file.Status == BuildYourself.Domain.Enums.FileStatus.Uncompleted)
+                                    {
+                                        <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
+                                               class="btn btn-outline-info" value="Start File" style="width:100px" />
+                                    }
+                                    else if (file.Status == BuildYourself.Domain.Enums.FileStatus.InProcess)
+                                    {
+                                        <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
+                                               class="btn btn-outline-info" value="End File" style="width:100px" />
+                                    }
+                                    else
+                                    {
+                                        <input id="changeBtn" onclick="changeFileStatus('@file.Name')"
+                                               class="btn btn-outline-info" value="Reset" style="width:100px" />
+                                    }
+                                </td>
+                                <td>
+                                    <input id="deleteBtn" class="btn btn-outline-danger" value="Delete"
+                                           style="width:100px" onclick="deleteFile('@file.Name')" />
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            
             <div class="row">
                 <div class="col-6">
                     <h5 class="text-center">Unfinished Files <i class="fa-solid fa-bolt"></i></h5>
@@ -213,6 +215,10 @@
     </div>
 </div>
 
+@section Styles{
+    <link href="~/css/index.css" rel="stylesheet" />
+}
+
 @section Scripts
 {
     <script src="https://kit.fontawesome.com/94804be35d.js" crossorigin="anonymous"></script>
@@ -225,6 +231,7 @@
         const dropdownMenu =
             document.querySelector('.dropdown-menu');
         let mySelectedItems = [];
+
 
         function handleCB(event) {
             const checkbox = event.target;
@@ -370,7 +377,6 @@
                 params.filters[i] = str.value;
                 i++;
             }
-
             $.ajax({
                 type: 'POST',
                 url: '@Url.Action("GenerateFile", "File")',
@@ -389,13 +395,16 @@
             })
         });
 
-        $('#createFileCategory').on('click', function (e) {
+        $("#createFileCategoryForm").submit(function (e) {
             e.preventDefault();
+        });
+
+        function createCategory() {
             $.ajax({
                 type: 'POST',
                 url: '@Url.Action("CreateCategory", "File")',
                 data: $('#createFileCategoryForm').serialize(),
-                success: function(response){
+                success: function (response) {
                     select = document.getElementById('selectCategory');
                     name = document.getElementById('categoryNameInput').value;
                     var opt = document.createElement('option');
@@ -411,7 +420,7 @@
                         icon: "success"
                     });
                 },
-                error: function(response){
+                error: function (response) {
                     Swal.fire({
                         title: "Information",
                         text: response.responseJSON.description,
@@ -419,7 +428,7 @@
                     });
                 }
             })
-        });
+        }
 
         $('#createFile').on('click', function (e) {
             e.preventDefault();
@@ -434,65 +443,84 @@
                         icon: "success"
                     });
 
-                    var table = document.getElementById("tbl");
-                    row = table.insertRow();
+                    let sfield = document.getElementById('myInput').value;
 
-                    let nameCell = row.insertCell(0);
-                    let descriptionCell = row.insertCell(1);
-                    let categoryCell = row.insertCell(2);
-                    let actionCell = row.insertCell(3);
-                    let deleteCell = row.insertCell(4);
+                    if (sfield.trim() == ""){
+                        var table = document.getElementById("tbl");
+                        row = table.insertRow();
+                        row.id = document.getElementById('itemNameInput').value + ' row';
 
-                    var nameText = document.createTextNode(document.getElementById('itemNameInput').value);
-                    nameCell.appendChild(nameText);
+                        let nameCell = row.insertCell(0);
+                        let descriptionCell = row.insertCell(1);
+                        let categoryCell = row.insertCell(2);
+                        let actionCell = row.insertCell(3);
+                        let deleteCell = row.insertCell(4);
 
-                    var descriptionText = document.createTextNode(document.getElementById('itemDescInput').value);
-                    descriptionCell.appendChild(descriptionText);
+                        var nameText = document.createTextNode(document.getElementById('itemNameInput').value);
+                        nameCell.appendChild(nameText);
 
-                    var categoryText = document.createTextNode(document.getElementById('selectCategory').value);
-                    categoryCell.appendChild(categoryText);
+                        var descriptionText = document.createTextNode(document.getElementById('itemDescInput').value);
+                        descriptionCell.appendChild(descriptionText);
 
-                    var actionInput = document.createElement('input');
-                    actionInput.value = "Start File";
-                    actionInput.type = "button";
-                    actionInput.style.width = "100px";
-                    actionInput.setAttribute('class', "btn btn-outline-info");
-                    actionInput.onclick = function dofun() {
-                        var parameters = {
-                            FileName: document.getElementById('itemNameInput').value
+                        var categoryText = document.createTextNode(document.getElementById('selectCategory').value);
+                        categoryCell.appendChild(categoryText);
+
+                        var actionInput = document.createElement('input');
+                        actionInput.value = "Start File";
+                        actionInput.type = "button";
+                        actionInput.style.width = "100px";
+                        actionInput.setAttribute('class', "btn btn-outline-info");
+                        actionInput.onclick = function dofun() {
+                            var parameters = {
+                                FileName: document.getElementById('itemNameInput').value
+                            };
+                            $.ajax({
+                                type: 'POST',
+                                url: '@Url.Action("ChangeFileStatus", "File")',
+                                data: parameters,
+                                success: function () {
+                                    location.reload()
+                                },
+                                error: function (response) {
+                                    Swal.fire({
+                                        title: "Error",
+                                        text: "Something went wrong. We can't change status",
+                                        icon: "error"
+                                    });
+                                }
+                            });
                         };
-                        $.ajax({
-                            type: 'POST',
-                            url: '@Url.Action("ChangeFileStatus", "File")',
-                            data: parameters,
-                            success: function (response) {
-                                if(newinp.value == "Start File"){
-                                    newinp.value = "End File";
-                                }
-                                else if (newinp.value == "End File") {
-                                    newinp.value = "Reset";
-                                }
-                                else {
-                                    newinp.value = "Start File";
-                                }
-                            },
-                            error: function (response) {
-                                Swal.fire({
-                                    title: "Error",
-                                    text: "Something went wrong. We can't change status",
-                                    icon: "error"
-                                });
-                            }
-                        });
-                    };
-                    actionCell.appendChild(actionInput);
+                        actionCell.appendChild(actionInput);
 
-                    var deleteInput = document.createElement('input');
-                    deleteInput.value = "Delete";
-                    deleteInput.type = "button";
-                    deleteInput.style.width = "100px";
-                    deleteInput.setAttribute('class', "btn btn-outline-danger");
-                    deleteCell.appendChild(deleteInput);
+                        var deleteInput = document.createElement('input');
+                        deleteInput.value = "Delete";
+                        deleteInput.type = "button";
+                        deleteInput.style.width = "100px";
+                        deleteInput.setAttribute('class', "btn btn-outline-danger");
+                        deleteInput.onclick = function dofun() {
+                            var parameters = {
+                                FileName: document.getElementById('itemNameInput').value
+                            };
+                            $.ajax({
+                                type: 'DELETE',
+                                url: '@Url.Action("DeleteFile", "File")',
+                                data: parameters,
+                                success: function (response) {
+                                    let rowId = parameters.FileName + ' row';
+                                    var row = document.getElementById(rowId);
+                                    row.parentNode.removeChild(row);
+                                },
+                                error: function (response) {
+                                    Swal.fire({
+                                        title: "Information",
+                                        text: response.responseJSON.description,
+                                        icon: "error"
+                                    });
+                                }
+                            });
+                        };
+                        deleteCell.appendChild(deleteInput);
+                    }                    
                 },
                 error: function(response){
                     Swal.fire({
