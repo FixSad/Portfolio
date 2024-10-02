@@ -26,8 +26,6 @@ namespace OOP.Figures.Figures
                 {
                     if (i == 0 || i == _side - 1 || j == 0 || j == _side - 1)
                         DrawProvider.Drawer.Draw(i, j); 
-                    else
-                        DrawProvider.Drawer.Erase(i, j);
                 }
             }
             Console.WriteLine();
