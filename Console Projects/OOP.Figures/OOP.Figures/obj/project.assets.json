@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ConsoleDrawer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ConsoleDrawer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsoleDrawer.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ConsoleDrawer/1.0.0": {
+      "type": "project",
+      "path": "../ConsoleDrawer/ConsoleDrawer.csproj",
+      "msbuildProject": "../ConsoleDrawer/ConsoleDrawer.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ConsoleDrawer >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Goga\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\projects\\Pet-Projects\\Portfolio\\Console Projects\\OOP.Figures\\ConsoleDrawer\\ConsoleDrawer.csproj": {
+              "projectPath": "D:\\projects\\Pet-Projects\\Portfolio\\Console Projects\\OOP.Figures\\ConsoleDrawer\\ConsoleDrawer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

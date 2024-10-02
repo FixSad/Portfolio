@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleDrawer
 {
-    public class Drawer : IDrawer
+    internal class Drawer : IDrawer
     {
         private const char SYMBOL = '.';
 

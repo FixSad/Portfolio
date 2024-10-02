@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using OOP.Figures.Figures;
+
+Figure square = new Square(5);
+square.Paint();
+Console.WriteLine(square);

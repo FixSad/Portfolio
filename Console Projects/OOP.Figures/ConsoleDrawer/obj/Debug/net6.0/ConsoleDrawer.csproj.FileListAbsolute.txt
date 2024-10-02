@@ -1,0 +1,12 @@
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\bin\Debug\net6.0\ConsoleDrawer.deps.json
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\bin\Debug\net6.0\ConsoleDrawer.dll
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\bin\Debug\net6.0\ConsoleDrawer.pdb
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\ConsoleDrawer.csproj.AssemblyReference.cache
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\ConsoleDrawer.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\ConsoleDrawer.AssemblyInfoInputs.cache
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\ConsoleDrawer.AssemblyInfo.cs
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\ConsoleDrawer.csproj.CoreCompileInputs.cache
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\ConsoleDrawer.dll
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\refint\ConsoleDrawer.dll
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\ConsoleDrawer.pdb
+D:\projects\Pet-Projects\Portfolio\Console Projects\OOP.Figures\ConsoleDrawer\obj\Debug\net6.0\ref\ConsoleDrawer.dll

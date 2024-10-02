@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "OOP.Figures/1.0.0": {
+        "dependencies": {
+          "ConsoleDrawer": "1.0.0"
+        },
+        "runtime": {
+          "OOP.Figures.dll": {}
+        }
+      },
+      "ConsoleDrawer/1.0.0": {
+        "runtime": {
+          "ConsoleDrawer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OOP.Figures/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ConsoleDrawer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
