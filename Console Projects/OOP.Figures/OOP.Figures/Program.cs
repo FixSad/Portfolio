@@ -1,4 +1,4 @@
 ﻿using OOP.Figures.Figures;
 
-Figure figure = new Rectangle(10, 3);
+Figure figure = new Circle(-10);
 figure.Paint();

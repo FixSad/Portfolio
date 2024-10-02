@@ -14,7 +14,7 @@ namespace OOP.Figures.Figures
 
         public Square(int side)
         {
-            _side = side;
+            _side = Math.Abs(side);
             Area = CalculateArea();
         }
 

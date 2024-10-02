@@ -14,8 +14,8 @@ namespace OOP.Figures.Figures
 
         public Rectangle(int width, int height)
         {
-            _width = width;
-            _height = height;
+            _width = Math.Abs(width);
+            _height = Math.Abs(height);
             Area = CalculateArea();
         }
 
