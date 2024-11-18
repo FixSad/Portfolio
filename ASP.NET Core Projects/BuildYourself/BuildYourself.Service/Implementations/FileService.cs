@@ -6,7 +6,6 @@ using BuildYourself.Domain.ViewModel;
 using BuildYourself.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using NPOI.Util.ArrayExtensions;
 
 namespace BuildYourself.Service.Implementations
 {

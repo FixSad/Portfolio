@@ -1,11 +1,7 @@
-﻿using BuildYourself.DAL;
-using BuildYourself.Domain.Enities;
-using BuildYourself.Domain.ViewModel;
-using BuildYourself.Models;
+﻿using BuildYourself.Domain.ViewModel;
 using BuildYourself.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Diagnostics;
 
 namespace BuildYourself.Controllers
 {

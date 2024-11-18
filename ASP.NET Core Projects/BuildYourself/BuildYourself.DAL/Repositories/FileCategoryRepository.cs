@@ -1,10 +1,5 @@
 ﻿using BuildYourself.DAL.Interfaces;
 using BuildYourself.Domain.Enities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BuildYourself.DAL.Repositories
 {
