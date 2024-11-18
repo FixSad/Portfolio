@@ -365,7 +365,10 @@
           "NPOI": "2.6.2"
         },
         "runtime": {
-          "BuildYourself.Domain.dll": {}
+          "BuildYourself.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

@@ -6,6 +6,7 @@ using BuildYourself.Domain.ViewModel;
 using BuildYourself.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using NPOI.Util.ArrayExtensions;
 
 namespace BuildYourself.Service.Implementations
 {
@@ -28,18 +29,18 @@ namespace BuildYourself.Service.Implementations
         {
             try
             {
-                _logger.LogInformation($"Request to update the FileItem - {model.Name}");
+                _logger.LogInformation($"[{DateTime.Now}]. Request to update the FileItem - {model.Name}");
                 await _fileRepository.Update(model);
-                _logger.LogInformation($"The FileItem was updated - {model.Name}");
+                _logger.LogInformation($"[{DateTime.Now}]. The FileItem was updated - {model.Name}");
                 return new BaseResponse<bool>
                 {
                     StatusCode = StatusCode.Success,
-                    Description = $"The file's description has been saved"
+                    Description = $"[{DateTime.Now}]. The FileItem's description has been saved - {model.Name}"
                 };
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"[FileService.UpdateFile]: {ex.Message}");
+                _logger.LogError(ex, $"[{DateTime.Now}]. [FileService.UpdateFile]: {ex.Message}");
                 return new BaseResponse<bool>
                 {
                     StatusCode = StatusCode.InternalServerError,
@@ -54,7 +55,7 @@ namespace BuildYourself.Service.Implementations
             {
                 var file = await _fileRepository.GetAll()
                     .Where(x => x.Name == FileName).FirstOrDefaultAsync();
-                _logger.LogInformation($"Request to change the FileItem status - {file.Name}");
+                _logger.LogInformation($"[{DateTime.Now}]. Request to change the FileItem status - {file.Name}");
                 if (file.Status == FileStatus.Uncompleted)
                     file.Status = FileStatus.InProcess;
                 else if (file.Status == FileStatus.InProcess)
@@ -63,7 +64,7 @@ namespace BuildYourself.Service.Implementations
                     file.Status = FileStatus.Uncompleted;
 
                 await _fileRepository.Update(file);
-                _logger.LogInformation($"The file status was changed - {file.Name}");
+                _logger.LogInformation($"[{DateTime.Now}]. The FileItem status was changed - {file.Name}");
                 return new BaseResponse<bool>
                 {
                     Description = "The file status was changed",
@@ -72,7 +73,7 @@ namespace BuildYourself.Service.Implementations
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"[FileService.ChangeFileStatus]: {ex.Message}");
+                _logger.LogError(ex, $"[{DateTime.Now}]. [FileService.ChangeFileStatus]: {ex.Message}");
                 return new BaseResponse<bool>
                 {
                     Description = ex.Message,
@@ -85,7 +86,7 @@ namespace BuildYourself.Service.Implementations
         {
             try
             {
-                _logger.LogInformation($"Request to create the FileItem - {model.FileName}");
+                _logger.LogInformation($"[{DateTime.Now}]. Request to create the FileItem - {model.FileName}");
                 var file = await _fileRepository.GetAll()
                     .Where(x => x.Name == model.FileName)
                     .FirstOrDefaultAsync();
@@ -94,7 +95,7 @@ namespace BuildYourself.Service.Implementations
                 {
                     return new BaseResponse<FileItem>
                     {
-                        Description = $"File with that name already exists",
+                        Description = $"[{DateTime.Now}]. File with name {model.FileName} already exists",
                         StatusCode = StatusCode.ItemIsHadAlready
                     };
                 }
@@ -113,17 +114,17 @@ namespace BuildYourself.Service.Implementations
                 };
 
                 await _fileRepository.Create(fileItem);
-                _logger.LogInformation($"The FileItem was created - {model.FileName}");
+                _logger.LogInformation($"[{DateTime.Now}]. The FileItem was created - {model.FileName}");
 
                 return new BaseResponse<FileItem>
                 {
                     StatusCode = StatusCode.Success,
-                    Description = $"The file was created successfully!"
+                    Description = $"{model.FileName} was created successfully!"
                 };
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"[FileService.Create]: {ex.Message}");
+                _logger.LogError(ex, $"[{DateTime.Now}]. [FileService.Create]: {ex.Message}");
                 return new BaseResponse<FileItem>
                 {
                     StatusCode = StatusCode.InternalServerError,
@@ -136,7 +137,7 @@ namespace BuildYourself.Service.Implementations
         {
             try
             {
-                _logger.LogInformation($"Request to delete FileItem - " + FileName);
+                _logger.LogInformation($"[{DateTime.Now}]. Request to delete FileItem - {FileName}");
                 var file = await _fileRepository.GetAll()
                     .Where(x => x.Name.Equals(FileName))
                     .FirstOrDefaultAsync();
@@ -151,17 +152,17 @@ namespace BuildYourself.Service.Implementations
                 }
 
                 await _fileRepository.Delete(file);
-                _logger.LogInformation($"The FileItem was deleted - {FileName}");
+                _logger.LogInformation($"[{DateTime.Now}]. The FileItem was deleted - {FileName}");
 
                 return new BaseResponse<bool>
                 {
                     StatusCode = StatusCode.Success,
-                    Description = $"The file was deleted successfully!"
+                    Description = $"{FileName} was deleted successfully!"
                 };
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"[FileService.DeleteFile]: {ex.Message}");
+                _logger.LogError(ex, $"[{DateTime.Now}]. [FileService.DeleteFile]: {ex.Message}");
                 return new BaseResponse<bool>
                 {
                     StatusCode = StatusCode.InternalServerError,
@@ -174,12 +175,12 @@ namespace BuildYourself.Service.Implementations
         {
             try
             {
-                _logger.LogInformation($"Request to get FileItems");
+                _logger.LogInformation($"[{DateTime.Now}]. Request to get FileItems");
                 var files = _fileRepository.GetAll();
 
                 if (string.IsNullOrEmpty(Name) || string.IsNullOrWhiteSpace(Name))
                 {
-                    _logger.LogInformation($"Request to get FileItems is successful");
+                    _logger.LogInformation($"[{DateTime.Now}]. Request to get FileItems is successful");
 
                     return files;
                 }
@@ -190,7 +191,7 @@ namespace BuildYourself.Service.Implementations
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"[FileService.GetFiles]: {ex.Message}");
+                _logger.LogError(ex, $"[{DateTime.Now}]. [FileService.GetFiles]: {ex.Message}");
                 return null;
             }
         }
@@ -200,7 +201,10 @@ namespace BuildYourself.Service.Implementations
             try
             {
                 Random random = new Random();
-                _logger.LogInformation($"Request to get random FileItem");
+                
+                string categories = filters.Length > 0 ? string.Join(",", filters) : "All Cateories";
+
+                _logger.LogInformation($"[{DateTime.Now}]. Request to get random FileItem with filters - {categories}");
 
                 var files = await _fileRepository.GetAll()
                     .Where(x => x.Status == FileStatus.Uncompleted)
@@ -264,7 +268,7 @@ namespace BuildYourself.Service.Implementations
                     }
                 }
 
-                _logger.LogInformation($"No Files with FileStatus = Uncompleted.");
+                _logger.LogInformation($"[{DateTime.Now}]. No Files with FileStatus = Uncompleted.");
 
                 return new BaseResponse<FileItem>
                 {
@@ -274,7 +278,7 @@ namespace BuildYourself.Service.Implementations
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"[FileService.GetRandomFile]: {ex.Message}");
+                _logger.LogError(ex, $"[{DateTime.Now}]. [FileService.GetRandomFile]: {ex.Message}");
                 return new BaseResponse<FileItem>
                 {
                     Description = ex.Message,

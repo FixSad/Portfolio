@@ -23,8 +23,9 @@ D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYour
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\BuildYourself.DAL.AssemblyInfoInputs.cache
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\BuildYourself.DAL.AssemblyInfo.cs
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\BuildYourself.DAL.csproj.CoreCompileInputs.cache
-D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\BuildYourself.DAL.csproj.CopyComplete
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\BuildYourself.DAL.dll
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\refint\BuildYourself.DAL.dll
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\BuildYourself.DAL.pdb
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\ref\BuildYourself.DAL.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\BuildYourself.DAL.sourcelink.json
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself.DAL\obj\Debug\net6.0\BuildYou.75CE55AC.Up2Date

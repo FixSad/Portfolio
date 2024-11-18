@@ -158,7 +158,6 @@ D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYour
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\scopedcss\bundle\BuildYourself.styles.css
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\scopedcss\projectbundle\BuildYourself.bundle.scp.css
-D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\BuildYourself.csproj.CopyComplete
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\BuildYourself.dll
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\refint\BuildYourself.dll
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\BuildYourself.pdb
@@ -180,3 +179,5 @@ D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYour
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\System.Security.Cryptography.Xml.dll
 D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\BuildYourself.sourcelink.json
+D:\projects\Pet-Projects\Portfolio\ASP.NET Core Projects\BuildYourself\BuildYourself\obj\Debug\net6.0\BuildYou.57360187.Up2Date

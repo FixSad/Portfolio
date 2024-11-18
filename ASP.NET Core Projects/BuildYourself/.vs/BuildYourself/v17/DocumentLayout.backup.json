@@ -1,0 +1,552 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5630CD4A-00DD-40F5-A487-B3713E7F84B9}|BuildYourself.Service\\BuildYourself.Service.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.service\\implementations\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630CD4A-00DD-40F5-A487-B3713E7F84B9}|BuildYourself.Service\\BuildYourself.Service.csproj|solutionrelative:buildyourself.service\\implementations\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.dal\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|solutionrelative:buildyourself.dal\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630CD4A-00DD-40F5-A487-B3713E7F84B9}|BuildYourself.Service\\BuildYourself.Service.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.service\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630CD4A-00DD-40F5-A487-B3713E7F84B9}|BuildYourself.Service\\BuildYourself.Service.csproj|solutionrelative:buildyourself.service\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630CD4A-00DD-40F5-A487-B3713E7F84B9}|BuildYourself.Service\\BuildYourself.Service.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.service\\implementations\\filecategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630CD4A-00DD-40F5-A487-B3713E7F84B9}|BuildYourself.Service\\BuildYourself.Service.csproj|solutionrelative:buildyourself.service\\implementations\\filecategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630CD4A-00DD-40F5-A487-B3713E7F84B9}|BuildYourself.Service\\BuildYourself.Service.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.service\\interfaces\\ifilecategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630CD4A-00DD-40F5-A487-B3713E7F84B9}|BuildYourself.Service\\BuildYourself.Service.csproj|solutionrelative:buildyourself.service\\interfaces\\ifilecategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.dal\\repositories\\filecategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|solutionrelative:buildyourself.dal\\repositories\\filecategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.dal\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|solutionrelative:buildyourself.dal\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\buildyourself.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\buildyourself.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\views\\file\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\views\\file\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\views\\file\\fileinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\views\\file\\fileinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\viewmodel\\fileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\viewmodel\\fileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\extensions\\queryextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\extensions\\queryextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\enums\\filestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\enums\\filestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\enums\\musclegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\enums\\musclegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\enums\\statuscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\enums\\statuscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\enities\\gymcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\enities\\gymcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|solutionrelative:buildyourself.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\enities\\fileitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\enities\\fileitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\enities\\gymtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\enities\\gymtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\enities\\filecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\enities\\filecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.domain\\enities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5289B080-EC13-465C-986E-9745C627F2BE}|BuildYourself.Domain\\BuildYourself.Domain.csproj|solutionrelative:buildyourself.domain\\enities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\views\\file\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\views\\file\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself.dal\\buildyourself.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CC53A9A8-1D85-45A8-AB57-390159568567}|BuildYourself.DAL\\BuildYourself.DAL.csproj|solutionrelative:buildyourself.dal\\buildyourself.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|d:\\projects\\pet-projects\\portfolio\\asp.net core projects\\buildyourself\\buildyourself\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D66B2C0B-71AC-4F5D-8410-8DCB97B09216}|BuildYourself\\BuildYourself.csproj|solutionrelative:buildyourself\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 232,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FileCategoryRepository.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\Repositories\\FileCategoryRepository.cs",
+              "RelativeDocumentMoniker": "BuildYourself.DAL\\Repositories\\FileCategoryRepository.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\Repositories\\FileCategoryRepository.cs",
+              "RelativeToolTip": "BuildYourself.DAL\\Repositories\\FileCategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T10:19:30.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IFileCategoryService.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Service\\Interfaces\\IFileCategoryService.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Service\\Interfaces\\IFileCategoryService.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Service\\Interfaces\\IFileCategoryService.cs",
+              "RelativeToolTip": "BuildYourself.Service\\Interfaces\\IFileCategoryService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADgvw0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T10:46:45.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Service\\Implementations\\FileService.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Service\\Implementations\\FileService.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Service\\Implementations\\FileService.cs*",
+              "RelativeToolTip": "BuildYourself.Service\\Implementations\\FileService.cs*",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAswM8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T18:55:30.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Program.cs",
+              "RelativeDocumentMoniker": "BuildYourself\\Program.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Program.cs",
+              "RelativeToolTip": "BuildYourself\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T19:18:51.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "BuildYourself\\Controllers\\FileController.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Controllers\\FileController.cs",
+              "RelativeToolTip": "BuildYourself\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-22T19:25:08.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\Interfaces\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "BuildYourself.DAL\\Interfaces\\IBaseRepository.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\Interfaces\\IBaseRepository.cs",
+              "RelativeToolTip": "BuildYourself.DAL\\Interfaces\\IBaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T10:15:15.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Service\\Interfaces\\IFileService.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Service\\Interfaces\\IFileService.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Service\\Interfaces\\IFileService.cs",
+              "RelativeToolTip": "BuildYourself.Service\\Interfaces\\IFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T14:35:08.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileRepository.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\Repositories\\FileRepository.cs",
+              "RelativeDocumentMoniker": "BuildYourself.DAL\\Repositories\\FileRepository.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\Repositories\\FileRepository.cs",
+              "RelativeToolTip": "BuildYourself.DAL\\Repositories\\FileRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-12T18:21:29.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileCategoryService.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Service\\Implementations\\FileCategoryService.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Service\\Implementations\\FileCategoryService.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Service\\Implementations\\FileCategoryService.cs",
+              "RelativeToolTip": "BuildYourself.Service\\Implementations\\FileCategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:15:13.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BuildYourself.Domain.csproj",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\BuildYourself.Domain.csproj",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\BuildYourself.Domain.csproj",
+              "RelativeToolTip": "BuildYourself.Domain\\BuildYourself.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-01-30T12:47:25.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\appsettings.json",
+              "RelativeDocumentMoniker": "BuildYourself\\appsettings.json",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\appsettings.json",
+              "RelativeToolTip": "BuildYourself\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-01-23T11:39:51.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "index.css",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\wwwroot\\css\\index.css",
+              "RelativeDocumentMoniker": "BuildYourself\\wwwroot\\css\\index.css",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\wwwroot\\css\\index.css",
+              "RelativeToolTip": "BuildYourself\\wwwroot\\css\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-11T06:27:18.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BuildYourself\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BuildYourself\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-17T21:54:41.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FileInfo.cshtml",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\File\\FileInfo.cshtml",
+              "RelativeDocumentMoniker": "BuildYourself\\Views\\File\\FileInfo.cshtml",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\File\\FileInfo.cshtml",
+              "RelativeToolTip": "BuildYourself\\Views\\File\\FileInfo.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-23T19:09:32.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "BuildYourself\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "BuildYourself\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T06:07:51.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\File\\Index.cshtml",
+              "RelativeDocumentMoniker": "BuildYourself\\Views\\File\\Index.cshtml",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\File\\Index.cshtml",
+              "RelativeToolTip": "BuildYourself\\Views\\File\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAANwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-22T14:20:35.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "BuildYourself\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "BuildYourself\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-11T06:24:29.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "BuildYourself\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "BuildYourself\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T06:09:41.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "BuildYourself\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "BuildYourself\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T06:09:39.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FileViewModel.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\ViewModel\\FileViewModel.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\ViewModel\\FileViewModel.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\ViewModel\\FileViewModel.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\ViewModel\\FileViewModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T18:53:15.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "QueryExtension.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Extensions\\QueryExtension.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Extensions\\QueryExtension.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Extensions\\QueryExtension.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Extensions\\QueryExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-28T16:24:42.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FileStatus.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enums\\FileStatus.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Enums\\FileStatus.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enums\\FileStatus.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Enums\\FileStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-28T15:42:25.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MuscleGroups.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enums\\MuscleGroups.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Enums\\MuscleGroups.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enums\\MuscleGroups.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Enums\\MuscleGroups.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-22T14:19:51.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StatusCode.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enums\\StatusCode.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Enums\\StatusCode.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enums\\StatusCode.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Enums\\StatusCode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T10:40:36.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GymCategory.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\GymCategory.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Enities\\GymCategory.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\GymCategory.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Enities\\GymCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T12:31:39.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "BuildYourself.DAL\\ApplicationDBContext.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\ApplicationDBContext.cs",
+              "RelativeToolTip": "BuildYourself.DAL\\ApplicationDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-05T12:20:54.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FileItem.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\FileItem.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Enities\\FileItem.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\FileItem.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Enities\\FileItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T06:02:17.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GymTask.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\GymTask.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Enities\\GymTask.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\GymTask.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Enities\\GymTask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T12:31:41.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FileCategory.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\FileCategory.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Enities\\FileCategory.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\FileCategory.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Enities\\FileCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-22T14:19:51.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\Category.cs",
+              "RelativeDocumentMoniker": "BuildYourself.Domain\\Enities\\Category.cs",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.Domain\\Enities\\Category.cs",
+              "RelativeToolTip": "BuildYourself.Domain\\Enities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-22T14:19:51.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\File\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "BuildYourself\\Views\\File\\Privacy.cshtml",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\Views\\File\\Privacy.cshtml",
+              "RelativeToolTip": "BuildYourself\\Views\\File\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-30T13:03:15.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BuildYourself.DAL.csproj",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\BuildYourself.DAL.csproj",
+              "RelativeDocumentMoniker": "BuildYourself.DAL\\BuildYourself.DAL.csproj",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself.DAL\\BuildYourself.DAL.csproj",
+              "RelativeToolTip": "BuildYourself.DAL\\BuildYourself.DAL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-01-23T12:16:32.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BuildYourself\\appsettings.Development.json",
+              "ToolTip": "D:\\projects\\Pet-Projects\\Portfolio\\ASP.NET Core Projects\\BuildYourself\\BuildYourself\\appsettings.Development.json",
+              "RelativeToolTip": "BuildYourself\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-01-23T11:39:58.342Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

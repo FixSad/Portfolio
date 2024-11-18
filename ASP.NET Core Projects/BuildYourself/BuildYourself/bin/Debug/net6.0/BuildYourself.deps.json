@@ -686,7 +686,10 @@
           "Microsoft.EntityFrameworkCore": "7.0.15"
         },
         "runtime": {
-          "BuildYourself.DAL.dll": {}
+          "BuildYourself.DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "BuildYourself.Domain/1.0.0": {
@@ -694,7 +697,10 @@
           "NPOI": "2.6.2"
         },
         "runtime": {
-          "BuildYourself.Domain.dll": {}
+          "BuildYourself.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "BuildYourself.Service/1.0.0": {
@@ -703,7 +709,10 @@
           "BuildYourself.Domain": "1.0.0"
         },
         "runtime": {
-          "BuildYourself.Service.dll": {}
+          "BuildYourself.Service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
